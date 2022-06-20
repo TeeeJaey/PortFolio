@@ -1,0 +1,90 @@
+.menu-bar {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    transition: margin 0.8s;
+    z-index: 99;
+}
+.animated {
+    margin-left: -400px;
+}
+
+.menu-bg {
+    background-image: url("../../images/menuBG.png");
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.profile-pic {
+    width: fit-content;
+    height: 180px;
+    transition: margin 1.5s;
+}
+.profile-pic > img {
+    border-radius: 100%;
+    max-width: 160px;
+}
+.profile-pic > img:hover {
+    border-radius: 100%;
+    max-width: 175px;
+}
+
+.text-svg {
+    transition: margin 2.5s;
+}
+.text-svg > svg {
+    width: 100px;
+}
+
+.menu-btns {
+    width: 100%;
+}
+.menu-btn {
+    background-color: rgb(24 24 24 / 0.85);
+    color: #909096;
+    border-bottom: 1px solid #5c6866;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    padding: 12px;
+}
+.menu-btn:hover {
+    color: #fd2155;
+}
+.menu-btn.selected {
+    color: #05fdd8;
+    background: #1d1d1d;
+}
+
+.btn0 {
+    transition: margin 0.5s;
+}
+.btn1 {
+    transition: margin 0.65s;
+}
+.btn2 {
+    transition: margin 0.85s;
+}
+.btn3 {
+    transition: margin 1s;
+}
+.btn4 {
+    transition: margin 1.15s;
+}
+.btn5 {
+    transition: margin 1.3s;
+}
+.btn6 {
+    transition: margin 1.5s;
+}
+.btn7 {
+    transition: margin 1.6s;
+}
