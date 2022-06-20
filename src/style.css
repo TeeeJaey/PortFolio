@@ -19,8 +19,11 @@ body {
     background: #1d1d1d;
     margin: 0;
     font-family: "Open Sans", sans-serif;
+    --theme-blue: #05fdd8;
+    --theme-red: #fd2155;
+    --theme-background: #132a27;
 }
 
-.display-none {
+.d-none {
     display: none;
 }

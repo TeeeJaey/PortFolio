@@ -1,0 +1,11 @@
+#about.off {
+    margin-left: -100%;
+}
+.link {
+    margin-left: 280px;
+}
+.link:hover {
+    margin-left: 275px;
+    color: #00ffb5;
+    font-size: 22px;
+}

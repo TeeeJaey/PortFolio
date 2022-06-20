@@ -28,6 +28,7 @@ export default function MenuBar({ selectedTab, menuBtns, setSelectedTab }) {
     return (
         <>
             <div className="menu-bar animated">
+                <div className="menu-bg-color"></div>
                 <div className="menu-bg"></div>
                 <div className="text-svg animated">
                     <TJsvg />

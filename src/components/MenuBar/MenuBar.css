@@ -10,17 +10,23 @@
     z-index: 99;
 }
 .animated {
-    margin-left: -400px;
+    margin-left: -140vw;
 }
 
-.menu-bg {
+.menu-bg,
+.menu-bg-color {
     background-image: url("../../images/menuBG.png");
     position: absolute;
     top: 0;
     height: 100%;
     width: 100%;
-    opacity: 0.4;
+    opacity: 0.5;
     z-index: -1;
+}
+.menu-bg-color {
+    background: var(--theme-background);
+    opacity: 1;
+    z-index: -2;
 }
 
 .profile-pic {
@@ -57,11 +63,11 @@
     padding: 12px;
 }
 .menu-btn:hover {
-    color: #fd2155;
+    color: var(--theme-red);
 }
 .menu-btn.selected {
-    color: #05fdd8;
-    background: #1d1d1d;
+    color: var(--theme-blue);
+    background: var(--theme-background);
 }
 
 .btn0 {
@@ -87,4 +93,15 @@
 }
 .btn7 {
     transition: margin 1.6s;
+}
+
+@media (max-width: 860px) {
+    .menu-bar {
+        position: fixed;
+        width: 100vw;
+        margin-left: -100vw;
+    }
+    .menu-bar.showing {
+        margin-left: 0vw;
+    }
 }
