@@ -12,7 +12,7 @@ export default function Contact({ selectedTab, setSelectedTab }) {
 
     return (
         <>
-            <div id="contact" className="main-view">
+            <div id="contact" className="main-view off">
                 <div className="header">Contact Me</div>
                 <div className="content"></div>
             </div>

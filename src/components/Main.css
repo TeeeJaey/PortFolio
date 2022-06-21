@@ -15,14 +15,13 @@
 }
 
 .main-view {
-    top: 140px;
+    top: 30vh;
     left: 250px;
     margin: 15px;
     color: #eee;
     padding: 15px;
     position: fixed;
     background: #192220;
-    height: fit-content;
     font-size: 20px;
     width: 65%;
     transition: margin 0.5s;
@@ -41,11 +40,36 @@
     cursor: pointer;
 }
 
+.content-container {
+    max-height: 65vh;
+    overflow-y: auto;
+}
+.content {
+    margin: 15px 5px;
+}
+
+.mobile-menu-btn {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    color: white;
+    padding: 10px;
+    font-size: 28px;
+    background: #192220;
+    height: 28px;
+    display: none;
+    opacity: 0.8;
+}
+
 @media (max-width: 860px) {
     .main-view {
         left: unset;
-        top: 160px;
+        top: 18vh;
         margin: 25px;
         width: 80%;
+    }
+    .mobile-menu-btn {
+        display: block;
     }
 }

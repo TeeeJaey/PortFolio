@@ -1,11 +1,16 @@
 #about.off {
     margin-left: -100%;
 }
-.link {
-    margin-left: 280px;
+#about .link {
+    width: 100%;
+    text-align: center;
+    opacity: 0.6;
 }
-.link:hover {
-    margin-left: 275px;
+#about .link:hover {
+    opacity: 1;
     color: #00ffb5;
-    font-size: 22px;
+}
+.name {
+    font-size: 26px;
+    font-weight: 600;
 }

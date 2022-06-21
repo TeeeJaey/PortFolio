@@ -1,0 +1,32 @@
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #121615;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #0b3832;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #0a2320;
+}
+
+body {
+    background: #1d1d1d;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    --theme-blue: #05fdd8;
+    --theme-red: #fd2155;
+    --theme-background: #132a27;
+}
+
+.d-none {
+    display: none;
+}
+.d-flex {
+    display: flex;
+}

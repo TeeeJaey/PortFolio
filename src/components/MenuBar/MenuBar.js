@@ -1,18 +1,21 @@
 import React, { useEffect } from "react";
 import "./MenuBar.css";
 import TJsvg from "./TJsvg";
-import myImg from "../../images/myTrImg.png";
+import myImg from "../../images/profileTransparent.png";
+import { MdClose } from "react-icons/md";
 
-export default function MenuBar({ selectedTab, menuBtns, setSelectedTab }) {
+export default function MenuBar({ selectedTab, menuBtns, setSelectedTab, showingMobileMenu, setShowingMobileMenu }) {
     useEffect(() => {
         const btnanimatedList = document.getElementsByClassName("menu-btn");
         for (let i = btnanimatedList.length - 1; i >= 0; i--) {
             btnanimatedList[i].classList.add("animated");
         }
-        const baranimatedList = document.getElementsByClassName("menu-bar animated");
-        for (let i = baranimatedList.length - 1; i >= 0; i--) {
-            baranimatedList[i].classList.remove("animated");
+
+        const menuBar = document.getElementsByClassName("menu-bar");
+        for (let i = menuBar.length - 1; i >= 0; i--) {
+            menuBar[i].classList.remove("animated");
         }
+
         const timeout = setTimeout(() => {
             const animatedList = document.getElementsByClassName("animated");
             for (let i = animatedList.length - 1; i >= 0; i--) {
@@ -24,12 +27,23 @@ export default function MenuBar({ selectedTab, menuBtns, setSelectedTab }) {
             clearTimeout(timeout);
         };
     }, []);
+    useEffect(() => {
+        const menuBar = document.getElementsByClassName("menu-bar");
+        if (showingMobileMenu) {
+            menuBar[0].classList.add("showing");
+        } else {
+            menuBar[0].classList.remove("showing");
+        }
+    }, [showingMobileMenu]);
 
     return (
         <>
-            <div className="menu-bar animated">
+            <div className="menu-bar showing animated">
                 <div className="menu-bg-color"></div>
                 <div className="menu-bg"></div>
+                <div class="mobile-close-icon" onClick={() => setShowingMobileMenu(false)}>
+                    <MdClose />
+                </div>
                 <div className="text-svg animated">
                     <TJsvg />
                 </div>
@@ -42,7 +56,10 @@ export default function MenuBar({ selectedTab, menuBtns, setSelectedTab }) {
                             <div
                                 key={index}
                                 className={"menu-btn  btn" + index + (selectedTab == index ? " selected" : "")}
-                                onClick={() => setSelectedTab(index)}
+                                onClick={() => {
+                                    setSelectedTab(index);
+                                    setShowingMobileMenu(false);
+                                }}
                             >
                                 {menuBtn}
                             </div>

@@ -95,6 +95,20 @@
     transition: margin 1.6s;
 }
 
+.mobile-close-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    color: white;
+    padding: 10px;
+    font-size: 28px;
+    background: #192220;
+    height: 28px;
+    display: none;
+    opacity: 0.8;
+}
+
 @media (max-width: 860px) {
     .menu-bar {
         position: fixed;
@@ -103,5 +117,8 @@
     }
     .menu-bar.showing {
         margin-left: 0vw;
+    }
+    .mobile-close-icon {
+        display: block;
     }
 }
