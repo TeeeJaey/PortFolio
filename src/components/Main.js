@@ -2,22 +2,35 @@ import React, { useEffect, useState } from "react";
 import About from "./About/About";
 import MenuBar from "./MenuBar/MenuBar";
 import Submarine from "./Submarine/Submarine";
+import Welcome from "./Welcome/Welcome";
 import "./Main.css";
 import Contact from "./Contact/Contact";
 import { FaBars } from "react-icons/fa";
+import Bubbles from "./Bubbles/Bubbles";
+
+export const menuBarIndex = {
+    Welcome: -1,
+    About: 0,
+    Experience: 1,
+    Skills: 2,
+    Education: 3,
+    Work: 4,
+    Interests: 5,
+    Contact: 6,
+};
+const menuBtns = ["About", "Experience", "Skills", "Education", "Work", "Interests", "Contact"];
 
 export default function Main() {
-    const [selectedTab, setSelectedTab] = useState(-1);
+    const [selectedTab, setSelectedTab] = useState(-2);
     const [showingMobileMenu, setShowingMobileMenu] = useState(false);
 
-    const menuBtns = ["About", "Experience", "Skills", "Education", "Work", "Interests", "Contact"];
     useEffect(() => {
-        setTimeout(() => setSelectedTab(0), 500);
+        setTimeout(() => setSelectedTab(-1), 500);
     }, []);
 
     return (
         <div style={{ display: "flex" }}>
-            <div class="mobile-menu-btn" onClick={() => setShowingMobileMenu(true)}>
+            <div className="mobile-menu-btn" onClick={() => setShowingMobileMenu(true)}>
                 <FaBars />
             </div>
 
@@ -29,6 +42,7 @@ export default function Main() {
                 setSelectedTab={tab => setSelectedTab(tab)}
             />
             <Submarine />
+            <Welcome selectedTab={selectedTab} />
             <About selectedTab={selectedTab} setSelectedTab={tab => setSelectedTab(tab)} />
             <Contact selectedTab={selectedTab} setSelectedTab={tab => setSelectedTab(tab)} />
         </div>

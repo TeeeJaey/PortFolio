@@ -1,3 +1,44 @@
 #contact.off {
     margin-left: 100%;
 }
+#contact .content {
+    font-size: 22px;
+}
+.contact-caption {
+    font-size: 1rem;
+    color: #d1d1d1;
+    opacity: 0.8;
+}
+.contact-container {
+    font-size: 18px;
+}
+.contact-container > .d-flex {
+    margin: 5px;
+}
+.contact-icon {
+    position: relative;
+    top: 2px;
+    margin: 0px 5px;
+}
+.contact-value {
+    color: #6aafa1;
+    width: 60%;
+}
+.contact-label {
+    width: 150px;
+}
+#contact .link {
+    color: #6aafa1;
+}
+#contact .link:hover {
+    color: var(--theme-blue);
+}
+
+@media (max-width: 860px) {
+    .contact-container {
+        font-size: 14px;
+    }
+    .contact-label {
+        width: 100px;
+    }
+}

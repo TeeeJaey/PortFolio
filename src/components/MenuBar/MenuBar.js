@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import "./MenuBar.css";
 import TJsvg from "./TJsvg";
-import myImg from "../../images/profileTransparent.png";
 import { MdClose } from "react-icons/md";
 
 export default function MenuBar({ selectedTab, menuBtns, setSelectedTab, showingMobileMenu, setShowingMobileMenu }) {
@@ -41,14 +40,17 @@ export default function MenuBar({ selectedTab, menuBtns, setSelectedTab, showing
             <div className="menu-bar showing animated">
                 <div className="menu-bg-color"></div>
                 <div className="menu-bg"></div>
-                <div class="mobile-close-icon" onClick={() => setShowingMobileMenu(false)}>
+                <div className="mobile-close-icon" onClick={() => setShowingMobileMenu(false)}>
                     <MdClose />
                 </div>
-                <div className="text-svg animated">
+                <div
+                    className="text-svg animated"
+                    onClick={() => {
+                        setSelectedTab(-1);
+                        setShowingMobileMenu(false);
+                    }}
+                >
                     <TJsvg />
-                </div>
-                <div className="profile-pic animated">
-                    <img src={myImg} />
                 </div>
                 <div className="menu-btns">
                     {menuBtns.map((menuBtn, index) => {

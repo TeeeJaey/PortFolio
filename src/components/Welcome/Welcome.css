@@ -1,0 +1,25 @@
+#welcome.off {
+    margin-left: -100%;
+}
+#welcome .content-container {
+    overflow-y: hidden;
+}
+.welcome-content {
+    font-size: 3.3rem;
+}
+.welcome-name {
+    font-size: 5rem;
+    font-weight: 600;
+}
+.welcome-caption {
+    font-size: 1.3rem;
+    color: #d1d1d1;
+    opacity: 0.8;
+}
+.profile-pic {
+    width: 200px;
+    margin: auto;
+}
+.profile-pic > img {
+    width: 200px;
+}

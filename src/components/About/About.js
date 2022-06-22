@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import "./About.css";
-import myDegreeImg from "../../images/degreeTransparent.png";
+import { menuBarIndex } from "../Main";
 
 export default function About({ selectedTab, setSelectedTab }) {
     useEffect(() => {
-        if (selectedTab !== 0) {
+        if (selectedTab !== menuBarIndex.About) {
             document.getElementById("about").classList.add("off");
         } else {
             document.getElementById("about").classList.remove("off");
@@ -18,24 +18,24 @@ export default function About({ selectedTab, setSelectedTab }) {
 
                 <div className="content-container">
                     <div className="content">
-                        Hey, I am <span class="highlight name">Tejas Jadhav</span>.
+                        I am <span className="highlight name">Tejas Jadhav</span>.
+                        <br /> A 90s kid living in Mumbai.
                     </div>
                     <div className="content">
-                        <br />
-                        Full-Stack <span class="highlight"> Web Developer </span> with over
-                        <span class="highlight"> 4 years of experience</span>.
-                        <br />I have a <span class="highlight">Master degree</span> in Computer Engineering.
+                        Full-Stack / Front-end <span className="highlight"> Web Developer </span> & FreeLancer with over
+                        <span className="highlight"> 4 years of experience</span>.
+                        <br />I have a <span className="highlight">Master degree</span> in Computer Engineering.
                     </div>
                     <div className="content">
-                        Well-organised nerd with passion of <span class="highlight"> solving problems </span> having high attention to detail.
-                        <br />A huge fan of <span class="highlight">cricket </span>, PC games and TV shows
+                        Well-organised nerd with passion of <span className="highlight"> solving problems </span> having high attention to detail.
+                        <br />A huge fan of <span className="highlight">cricket </span>, PC games and TV shows
                     </div>
 
                     <div className="content">
                         Interested in working with me ?
                         <br />
                         <div
-                            class="link"
+                            className="link"
                             onClick={() => {
                                 setSelectedTab(6);
                             }}
