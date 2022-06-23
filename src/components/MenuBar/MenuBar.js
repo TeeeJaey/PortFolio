@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./MenuBar.css";
 import TJsvg from "./TJsvg";
 import { MdClose } from "react-icons/md";
+import menuBG from "../../images/menuBG.png";
 
 export default function MenuBar({ selectedTab, menuBtns, setSelectedTab, showingMobileMenu, setShowingMobileMenu }) {
     useEffect(() => {
@@ -38,8 +39,7 @@ export default function MenuBar({ selectedTab, menuBtns, setSelectedTab, showing
     return (
         <>
             <div className="menu-bar showing animated">
-                <div className="menu-bg-color"></div>
-                <div className="menu-bg"></div>
+                <div className="menu-bg-color"></div> <img className="menu-bg" src={menuBG} />
                 <div className="mobile-close-icon" onClick={() => setShowingMobileMenu(false)}>
                     <MdClose />
                 </div>

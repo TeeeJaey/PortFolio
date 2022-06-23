@@ -25,6 +25,7 @@
     font-size: 20px;
     width: 65%;
     transition: margin 0.5s;
+    z-index: 80;
 }
 
 .highlight {
@@ -38,6 +39,11 @@
 .link {
     color: var(--theme-blue);
     cursor: pointer;
+    opacity: 0.8;
+}
+.link:hover {
+    opacity: 1;
+    color: #00ffb5;
 }
 
 .content-container {

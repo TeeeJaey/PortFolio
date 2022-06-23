@@ -8,7 +8,10 @@
     font-size: 3.3rem;
 }
 .welcome-name {
-    font-size: 5rem;
+    position: absolute;
+    top: 68px;
+    left: 90px;
+    font-size: 4rem;
     font-weight: 600;
 }
 .welcome-caption {

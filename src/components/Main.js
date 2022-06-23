@@ -7,6 +7,7 @@ import "./Main.css";
 import Contact from "./Contact/Contact";
 import { FaBars } from "react-icons/fa";
 import Bubbles from "./Bubbles/Bubbles";
+import Experience from "./Experience/Experience";
 
 export const menuBarIndex = {
     Welcome: -1,
@@ -25,7 +26,7 @@ export default function Main() {
     const [showingMobileMenu, setShowingMobileMenu] = useState(false);
 
     useEffect(() => {
-        setTimeout(() => setSelectedTab(-1), 500);
+        setTimeout(() => setSelectedTab(1), 500);
     }, []);
 
     return (
@@ -33,6 +34,7 @@ export default function Main() {
             <div className="mobile-menu-btn" onClick={() => setShowingMobileMenu(true)}>
                 <FaBars />
             </div>
+            <Bubbles />
 
             <MenuBar
                 showingMobileMenu={showingMobileMenu}
@@ -45,6 +47,7 @@ export default function Main() {
             <Welcome selectedTab={selectedTab} />
             <About selectedTab={selectedTab} setSelectedTab={tab => setSelectedTab(tab)} />
             <Contact selectedTab={selectedTab} setSelectedTab={tab => setSelectedTab(tab)} />
+            <Experience selectedTab={selectedTab} />
         </div>
     );
 }

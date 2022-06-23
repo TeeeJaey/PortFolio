@@ -15,7 +15,6 @@
 
 .menu-bg,
 .menu-bg-color {
-    background-image: url("../../images/menuBG.png");
     position: absolute;
     top: 0;
     height: 100%;

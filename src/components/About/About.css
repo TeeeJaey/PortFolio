@@ -1,16 +1,27 @@
+#about {
+    color: #c7d9d5;
+}
 #about.off {
-    margin-left: -100%;
+    margin-left: -120vw;
 }
 #about .link {
     width: 100%;
     text-align: center;
-    opacity: 0.6;
-}
-#about .link:hover {
-    opacity: 1;
-    color: #00ffb5;
 }
 .name {
     font-size: 26px;
     font-weight: 600;
+}
+
+@media (max-width: 860px) {
+    #about {
+        font-size: 18px;
+        color: #c7d9d5;
+    }
+    #about {
+        top: 15vh;
+        width: 95vw;
+        left: 0vw;
+        margin: 0;
+    }
 }

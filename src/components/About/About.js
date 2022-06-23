@@ -23,7 +23,7 @@ export default function About({ selectedTab, setSelectedTab }) {
                     </div>
                     <div className="content">
                         Full-Stack / Front-end <span className="highlight"> Web Developer </span> & FreeLancer with over
-                        <span className="highlight"> 4 years of experience</span>.
+                        <span className="highlight"> 3 years of experience</span>.
                         <br />I have a <span className="highlight">Master degree</span> in Computer Engineering.
                     </div>
                     <div className="content">
