@@ -26,7 +26,7 @@ export default function Main() {
     const [showingMobileMenu, setShowingMobileMenu] = useState(false);
 
     useEffect(() => {
-        setTimeout(() => setSelectedTab(1), 500);
+        setTimeout(() => setSelectedTab(-1), 500);
     }, []);
 
     return (
