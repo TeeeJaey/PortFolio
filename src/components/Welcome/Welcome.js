@@ -15,14 +15,16 @@ export default function Welcome({ selectedTab }) {
     return (
         <>
             <div id="welcome" className="main-view off">
-                <div className="content-container">
-                    <div className="welcome-content">
-                        Hi, <br />
-                        I'm <span className="welcome-name">Tejas</span>
+                <div className="content-container d-flex">
+                    <div>
+                        <div className="welcome-content">
+                            Hi, <br />
+                            I'm <span className="welcome-name">Tejas</span>
+                        </div>
+                        <hr style={{ borderColor: "rgb(5 253 216 / 0.5)" }} />
+                        <div className="welcome-caption">Web Developer</div>
+                        <hr style={{ borderColor: "rgb(5 253 216 / 0.5)" }} />
                     </div>
-                    <hr style={{ borderColor: "rgb(5 253 216 / 0.5)" }} />
-                    <div className="welcome-caption">Web Developer</div>
-                    <hr style={{ borderColor: "rgb(5 253 216 / 0.5)" }} />
                     <div className="profile-pic">
                         <img src={myImg} />
                     </div>

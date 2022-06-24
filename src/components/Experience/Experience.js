@@ -27,21 +27,23 @@ export default function Experience({ selectedTab }) {
                 <div className="total-exp">{getTotalExperience()}</div>
 
                 <div className="content-container">
-                    <div className="d-flex exp-item">
-                        <div className="exp-span">Jan 2022 - Till Now</div>
-                        <div className="exp-value">
-                            <div className="exp-title">FrontEnd Developer</div>
-                            <div className="exp-company">
+                    <div className="d-flex work-item">
+                        <div className="work-span">
+                            Jan 2022 <br />- Till Now
+                        </div>
+                        <div className="work-value">
+                            <div className="work-title">FrontEnd Developer</div>
+                            <div className="work-company">
                                 <span className="link" onClick={() => window.open("https://www.here.com/")}>
                                     Here Tech
                                 </span>
                             </div>
-                            <div className="exp-techstack">
+                            <div className="work-techstack">
                                 <span className="techstack-item">Angular</span>
                                 <span className="techstack-item">React</span>
                                 <span className="techstack-item">TypeScript</span>
                             </div>
-                            <ul className="exp-content">
+                            <ul className="work-content">
                                 <li>
                                     Working on design & development{" "}
                                     <span className="link" onClick={() => window.open("https://www.here.com/platform/HD-live-map")}>
@@ -49,30 +51,30 @@ export default function Experience({ selectedTab }) {
                                     </span>
                                 </li>
                             </ul>
-                            <div className="exp-image-mobile">
+                            <div className="work-image-mobile">
                                 <img src={hereImg} />
                             </div>
                         </div>
-                        <div className="exp-image">
+                        <div className="work-image">
                             <img src={hereImg} />
                         </div>
                     </div>
-                    <div className="d-flex exp-item">
-                        <div className="exp-span">July 2018 - Dec 2021</div>
-                        <div className="exp-value">
-                            <div className="exp-title">FullStack Developer</div>
-                            <div className="exp-company">
+                    <div className="d-flex work-item">
+                        <div className="work-span">July 2018 - Dec 2021</div>
+                        <div className="work-value">
+                            <div className="work-title">FullStack Developer</div>
+                            <div className="work-company">
                                 <span className="link" onClick={() => window.open("https://www.dieboldnixdorf.com/")}>
                                     Diebold Nixdorf
                                 </span>
                             </div>
-                            <div className="exp-techstack">
+                            <div className="work-techstack">
                                 <span className="techstack-item">C#.Net</span>
                                 <span className="techstack-item">Angular</span>
                                 <span className="techstack-item">SQL</span>
                                 <span className="techstack-item">NodeJS</span>
                             </div>
-                            <ul className="exp-content">
+                            <ul className="work-content">
                                 <li>
                                     Worked on design & development{" "}
                                     <span
@@ -92,11 +94,11 @@ export default function Experience({ selectedTab }) {
                                     </span>
                                 </li>
                             </ul>
-                            <div className="exp-image-mobile">
+                            <div className="work-image-mobile">
                                 <img src={dnImg} />
                             </div>
                         </div>
-                        <div className="exp-image">
+                        <div className="work-image">
                             <img src={dnImg} />
                         </div>
                     </div>

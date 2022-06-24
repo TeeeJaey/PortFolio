@@ -1,11 +1,11 @@
-#experience {
+#education {
     top: 15vh;
     height: 75vh;
 }
-#experience.off {
+#education.off {
     margin-left: -120vw;
 }
-#experience .content-container {
+#education .content-container {
     overflow-y: auto;
     max-height: 65vh;
     margin-top: 10px;
@@ -20,16 +20,8 @@
     margin: auto;
 }
 
-.techstack-item {
-    border: 1px solid #d1334d;
-    padding: 2px 8px;
-    margin-bottom: 5px;
-    border-radius: 10px;
-    margin-right: 5px;
-}
-
 @media (max-width: 860px) {
-    #experience {
+    #education {
         top: 15vh;
         width: 94vw;
         left: 0vw;

@@ -8,6 +8,7 @@ import Contact from "./Contact/Contact";
 import { FaBars } from "react-icons/fa";
 import Bubbles from "./Bubbles/Bubbles";
 import Experience from "./Experience/Experience";
+import Education from "./Education/Education";
 
 export const menuBarIndex = {
     Welcome: -1,
@@ -48,6 +49,7 @@ export default function Main() {
             <About selectedTab={selectedTab} setSelectedTab={tab => setSelectedTab(tab)} />
             <Contact selectedTab={selectedTab} setSelectedTab={tab => setSelectedTab(tab)} />
             <Experience selectedTab={selectedTab} />
+            <Education selectedTab={selectedTab} />
         </div>
     );
 }
