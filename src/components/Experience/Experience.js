@@ -60,7 +60,7 @@ export default function Experience({ selectedTab }) {
                         </div>
                     </div>
                     <div className="d-flex work-item">
-                        <div className="work-span">July 2018 - Dec 2021</div>
+                        <div className="work-span">Jul 2018 - Dec 2021</div>
                         <div className="work-value">
                             <div className="work-title">FullStack Developer</div>
                             <div className="work-company">

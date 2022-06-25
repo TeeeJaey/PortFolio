@@ -51,7 +51,7 @@ export default function Education({ selectedTab }) {
                     </div>
                     <div className="d-flex work-item">
                         <div className="work-span">
-                            July 2018 <br />- Dec 2021
+                            May 2013 <br />- Jun 2017
                         </div>
                         <div className="work-value">
                             <div className="work-title">Bachelor of Technology - Computer Engineering</div>
