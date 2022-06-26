@@ -3,7 +3,7 @@ import "./Contact.css";
 import { menuBarIndex } from "../Main";
 import { FaEnvelope, FaLinkedin, FaFacebook, FaGithub } from "react-icons/fa";
 
-export default function Contact({ selectedTab, setSelectedTab }) {
+export default function Contact({ selectedTab }) {
     useEffect(() => {
         if (selectedTab !== menuBarIndex.Contact) {
             document.getElementById("contact").classList.add("off");
@@ -15,7 +15,7 @@ export default function Contact({ selectedTab, setSelectedTab }) {
     return (
         <>
             <div id="contact" className="main-view off">
-                <div className="header">Contact Me</div>
+                <div className="header">Contact</div>
                 <div className="content">
                     Have a question?
                     <br />

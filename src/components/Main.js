@@ -9,6 +9,9 @@ import { FaBars } from "react-icons/fa";
 import Bubbles from "./Bubbles/Bubbles";
 import Experience from "./Experience/Experience";
 import Education from "./Education/Education";
+import Skills from "./Skills/Skills";
+import Work from "./Work/Work";
+import Interests from "./Interests/Interests";
 
 export const menuBarIndex = {
     Welcome: -1,
@@ -27,7 +30,7 @@ export default function Main() {
     const [showingMobileMenu, setShowingMobileMenu] = useState(false);
 
     useEffect(() => {
-        setTimeout(() => setSelectedTab(-1), 500);
+        setTimeout(() => setSelectedTab(menuBarIndex.Work), 500);
     }, []);
 
     return (
@@ -45,11 +48,15 @@ export default function Main() {
                 setSelectedTab={tab => setSelectedTab(tab)}
             />
             <Submarine />
+
             <Welcome selectedTab={selectedTab} />
             <About selectedTab={selectedTab} setSelectedTab={tab => setSelectedTab(tab)} />
-            <Contact selectedTab={selectedTab} setSelectedTab={tab => setSelectedTab(tab)} />
             <Experience selectedTab={selectedTab} />
+            <Skills selectedTab={selectedTab} />
             <Education selectedTab={selectedTab} />
+            <Work selectedTab={selectedTab} />
+            <Interests selectedTab={selectedTab} />
+            <Contact selectedTab={selectedTab} />
         </div>
     );
 }

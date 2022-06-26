@@ -3,7 +3,7 @@
     height: 75vh;
 }
 #education.off {
-    margin-left: -120vw;
+    margin-left: 120vw;
 }
 #education .content-container {
     overflow-y: auto;
@@ -18,13 +18,4 @@
     color: #c8dfd8;
     font-size: 18px;
     margin: auto;
-}
-
-@media (max-width: 860px) {
-    #education {
-        top: 15vh;
-        width: 94vw;
-        left: 0vw;
-        margin: 0;
-    }
 }

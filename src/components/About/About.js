@@ -14,7 +14,7 @@ export default function About({ selectedTab, setSelectedTab }) {
     return (
         <>
             <div id="about" className="main-view off">
-                <div className="header">About Me</div>
+                <div className="header">About</div>
 
                 <div className="content-container">
                     <div className="content">

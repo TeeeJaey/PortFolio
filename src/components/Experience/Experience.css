@@ -27,12 +27,3 @@
     border-radius: 10px;
     margin-right: 5px;
 }
-
-@media (max-width: 860px) {
-    #experience {
-        top: 15vh;
-        width: 94vw;
-        left: 0vw;
-        margin: 0;
-    }
-}

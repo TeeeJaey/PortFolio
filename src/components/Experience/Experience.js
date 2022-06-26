@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import "../Edu-Exp.css";
 import "./Experience.css";
 import { menuBarIndex } from "../Main";
 import hereImg from "../../images/here.jpg";
@@ -27,23 +28,23 @@ export default function Experience({ selectedTab }) {
                 <div className="total-exp">{getTotalExperience()}</div>
 
                 <div className="content-container">
-                    <div className="d-flex work-item">
-                        <div className="work-span">
+                    <div className="d-flex edex-item">
+                        <div className="edex-span">
                             Jan 2022 <br />- Till Now
                         </div>
-                        <div className="work-value">
-                            <div className="work-title">FrontEnd Developer</div>
-                            <div className="work-company">
+                        <div className="edex-value">
+                            <div className="edex-title">FrontEnd Developer</div>
+                            <div className="edex-company">
                                 <span className="link" onClick={() => window.open("https://www.here.com/")}>
                                     Here Tech
                                 </span>
                             </div>
-                            <div className="work-techstack">
+                            <div className="edex-techstack">
                                 <span className="techstack-item">Angular</span>
                                 <span className="techstack-item">React</span>
                                 <span className="techstack-item">TypeScript</span>
                             </div>
-                            <ul className="work-content">
+                            <ul className="edex-content">
                                 <li>
                                     Working on design & development{" "}
                                     <span className="link" onClick={() => window.open("https://www.here.com/platform/HD-live-map")}>
@@ -51,30 +52,30 @@ export default function Experience({ selectedTab }) {
                                     </span>
                                 </li>
                             </ul>
-                            <div className="work-image-mobile">
+                            <div className="edex-image-mobile">
                                 <img src={hereImg} />
                             </div>
                         </div>
-                        <div className="work-image">
+                        <div className="edex-image">
                             <img src={hereImg} />
                         </div>
                     </div>
-                    <div className="d-flex work-item">
-                        <div className="work-span">Jul 2018 - Dec 2021</div>
-                        <div className="work-value">
-                            <div className="work-title">FullStack Developer</div>
-                            <div className="work-company">
+                    <div className="d-flex edex-item">
+                        <div className="edex-span">Jul 2018 - Dec 2021</div>
+                        <div className="edex-value">
+                            <div className="edex-title">FullStack Developer</div>
+                            <div className="edex-company">
                                 <span className="link" onClick={() => window.open("https://www.dieboldnixdorf.com/")}>
                                     Diebold Nixdorf
                                 </span>
                             </div>
-                            <div className="work-techstack">
+                            <div className="edex-techstack">
                                 <span className="techstack-item">C#.Net</span>
                                 <span className="techstack-item">Angular</span>
                                 <span className="techstack-item">SQL</span>
                                 <span className="techstack-item">NodeJS</span>
                             </div>
-                            <ul className="work-content">
+                            <ul className="edex-content">
                                 <li>
                                     Worked on design & development{" "}
                                     <span
@@ -94,11 +95,11 @@ export default function Experience({ selectedTab }) {
                                     </span>
                                 </li>
                             </ul>
-                            <div className="work-image-mobile">
+                            <div className="edex-image-mobile">
                                 <img src={dnImg} />
                             </div>
                         </div>
-                        <div className="work-image">
+                        <div className="edex-image">
                             <img src={dnImg} />
                         </div>
                     </div>

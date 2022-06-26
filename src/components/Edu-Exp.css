@@ -1,0 +1,109 @@
+/* Education and Experience */
+
+.edex-span {
+    width: 160px;
+    min-width: 160px;
+    color: #a6b8b3;
+    text-align: right;
+    font-style: italic;
+    line-height: 22px;
+    border-right: 1px solid #fd2155;
+    padding: 10px;
+    padding-left: 0px;
+    position: relative;
+    font-size: 16px;
+}
+
+.edex-span:after {
+    content: " ";
+    position: absolute;
+    top: 16px;
+    right: -6px;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #fd2155;
+    border-radius: 50%;
+    background-color: #fd2155;
+}
+.edex-value {
+    padding: 10px;
+    margin-bottom: 100px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 0.3em;
+    width: 50%;
+}
+.edex-title {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+.edex-company {
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.edex-techstack {
+    margin-bottom: 5px;
+    padding: 5px 0px;
+    color: #fd2155;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: flex;
+    flex-flow: wrap;
+}
+.edex-company::marker {
+    margin: 0px;
+}
+.edex-content {
+    color: #b2c8c4;
+    margin-top: 0px;
+    font-size: 15px;
+    padding-left: 15px;
+    line-height: 18px;
+}
+
+.edex-image > img,
+.edex-image-mobile > img {
+    width: 20vw;
+    margin-bottom: 20px;
+}
+.edex-image-mobile {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .edex-value {
+        width: 100%;
+    }
+    .edex-image {
+        display: none;
+    }
+    .edex-image-mobile {
+        display: block;
+        width: 100%;
+    }
+    .edex-image-mobile > img {
+        width: 100%;
+        height: auto;
+        max-width: 350px;
+    }
+}
+
+/* Mobile UI */
+@media (max-width: 860px) {
+    .edex-span {
+        width: 72px;
+        min-width: 70px;
+        font-size: 14px;
+    }
+    .edex-title {
+        font-size: 22px;
+    }
+    .edex-company {
+        font-size: 15px;
+    }
+    .edex-techstack {
+        font-size: 12px;
+    }
+}

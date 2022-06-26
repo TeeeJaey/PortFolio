@@ -1,0 +1,6 @@
+#skills {
+    color: #c7d9d5;
+}
+#skills.off {
+    margin-left: -120vw;
+}

@@ -2,7 +2,7 @@
     margin-left: -100%;
 }
 #welcome .content-container {
-    overflow-y: hidden;
+    font-family: "Alfa Slab One", cursive;
     justify-content: space-around;
     margin: 20px;
     flex-flow: wrap;
@@ -25,6 +25,7 @@
 }
 .profile-pic > img {
     width: 250px;
+    height: auto;
     border: 5px solid var(--theme-red);
     border-radius: 50%;
 }
@@ -34,13 +35,39 @@
         justify-content: space-between;
     }
     .welcome-content {
-        font-size: 4rem;
+        font-size: 3rem;
     }
     .welcome-name {
-        font-size: 3rem;
+        font-size: 4rem;
     }
     .profile-pic > img {
         width: 80%;
         max-width: 300px;
+    }
+    .waviy {
+        display: flex;
+    }
+}
+
+/* Name Animation*/
+
+.waviy-char {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.waviy-char.animate {
+    animation: waviy 0.75s infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes waviy {
+    0%,
+    40%,
+    100% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-20px);
     }
 }
