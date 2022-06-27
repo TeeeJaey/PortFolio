@@ -3,25 +3,17 @@
 }
 
 .work-list {
-    flex-flow: wrap;
+    overflow: auto;
+    max-height: 65vh;
+    margin-top: 10px;
 }
-
-.work-item {
-    width: 20%;
-}
-.work-item > img {
-    width: 100%;
-    height: auto;
-}
-
-@media (max-width: 860px) {
-    .work-item {
-        width: 33%;
-    }
-}
-
-@media (max-width: 550px) {
-    .work-item {
-        width: 50%;
-    }
+.work-list ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
