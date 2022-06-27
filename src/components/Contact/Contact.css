@@ -1,5 +1,8 @@
+#contact {
+    top: 22vh;
+}
 #contact.off {
-    margin-left: 100%;
+    margin-left: 110vw;
 }
 #contact .content {
     font-size: 22px;

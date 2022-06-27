@@ -15,10 +15,10 @@
 }
 
 .main-view {
-    top: 22vh;
+    top: 15vh;
     left: 250px;
     margin: 15px;
-    color: #eee;
+    color: #c7d9d5;
     padding: 15px;
     position: fixed;
     background: #192220d9;
