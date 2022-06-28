@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./Welcome.css";
-import { menuBarIndex } from "../Main";
+import { menuBarIndex } from "../../Constants";
 import myImg from "../../images/profileTransparent.png";
 
 export default function Welcome({ selectedTab }) {

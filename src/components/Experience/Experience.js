@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "../Edu-Exp.css";
 import "./Experience.css";
-import { menuBarIndex } from "../Main";
+import { menuBarIndex } from "../../Constants";
 import hereImg from "../../images/here.jpg";
 import dnImg from "../../images/DN.jpg";
 

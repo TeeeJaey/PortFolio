@@ -1,16 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Work.css";
-import { menuBarIndex } from "../Main";
-import MovieTrailersImg from "../../images/MovieTrailers.png";
-import BoardGamesImg from "../../images/BoardGames.png";
-import MernPosImg from "../../images/MernPos.png";
-import ChatBotImg from "../../images/ChatBot.png";
-import MyWayImg from "../../images/MyWay.png";
-import SendMyCellImg from "../../images/SendMyCell.png";
-import SignatureVerifierImg from "../../images/SignatureVerifier.png";
-import RaceItImg from "../../images/RaceIt.png";
-import MeditationImg from "../../images/Meditation.png";
-import SnakeLadderImg from "../../images/SnakeLadder.png";
+import { menuBarIndex, WorkList } from "../../Constants";
 import WorkItem from "./WorkItem";
 import WorkData from "./WorkData";
 
@@ -25,22 +15,9 @@ export default function Work({ selectedTab }) {
         }
     }, [selectedTab]);
 
-    const WorkList = {
-        MovieTrailers: MovieTrailersImg,
-        BoardGames: BoardGamesImg,
-        MernPos: MernPosImg,
-        ChatBot: ChatBotImg,
-        MyWayImg: MyWayImg,
-        MeditationImg: MeditationImg,
-        SendMyCellImg: SendMyCellImg,
-        RaceItImg: RaceItImg,
-        SignatureVerifierImg: SignatureVerifierImg,
-        SnakeLadderImg: SnakeLadderImg,
-    };
-
     return (
         <>
-            {showData && <WorkData onClose={() => setShowData(null)} image={WorkList[showData]} name={showData} />}
+            {showData && <WorkData onClose={() => setShowData(null)} data={WorkList[showData]} />}
 
             <div id="work" className="main-view off">
                 <div className="header">Work</div>
@@ -50,7 +27,7 @@ export default function Work({ selectedTab }) {
                 <div className="work-list">
                     <ul>
                         {Object.keys(WorkList).map(key => {
-                            return <WorkItem workItemClicked={name => setShowData(name)} image={WorkList[key]} name={key} />;
+                            return <WorkItem workItemClicked={name => setShowData(name)} image={WorkList[key].image} name={key} />;
                         })}
                     </ul>
                 </div>

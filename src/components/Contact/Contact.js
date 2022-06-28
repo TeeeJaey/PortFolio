@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./Contact.css";
-import { menuBarIndex } from "../Main";
+import { menuBarIndex } from "../../Constants";
 import { FaEnvelope, FaLinkedin, FaFacebook, FaGithub } from "react-icons/fa";
 
 export default function Contact({ selectedTab }) {

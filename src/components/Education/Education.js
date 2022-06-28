@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "../Edu-Exp.css";
 import "./Education.css";
-import { menuBarIndex } from "../Main";
+import { menuBarIndex } from "../../Constants";
 import mtechImg from "../../images/mtechTransparent.png";
 import btechImg from "../../images/btechTransparent.png";
 

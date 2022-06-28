@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./Skills.css";
-import { menuBarIndex } from "../Main";
+import { menuBarIndex } from "../../Constants";
 
 export default function Skills({ selectedTab }) {
     useEffect(() => {

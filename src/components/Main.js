@@ -12,18 +12,7 @@ import Education from "./Education/Education";
 import Skills from "./Skills/Skills";
 import Work from "./Work/Work";
 import Interests from "./Interests/Interests";
-
-export const menuBarIndex = {
-    Welcome: -1,
-    About: 0,
-    Experience: 1,
-    Skills: 2,
-    Education: 3,
-    Work: 4,
-    Interests: 5,
-    Contact: 6,
-};
-const menuBtns = ["About", "Experience", "Skills", "Education", "Work", "Interests", "Contact"];
+import { menuBarIndex, menuBtns } from "../Constants";
 
 export default function Main() {
     const [selectedTab, setSelectedTab] = useState(-2);

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./About.css";
-import { menuBarIndex } from "../Main";
+import { menuBarIndex } from "../../Constants";
 
 export default function About({ selectedTab, setSelectedTab }) {
     useEffect(() => {
