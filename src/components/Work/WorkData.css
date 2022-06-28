@@ -1,10 +1,11 @@
-.work-data-overlay {
+.work-data {
     z-index: 300;
     background: #0000009e;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
+    display: flex;
     height: 100vh;
 }
 
@@ -14,12 +15,13 @@
     z-index: 991;
     margin: 20px;
     width: 85vw;
-    top: 10vh;
-    left: 5vw;
-    position: fixed;
+    position: relative;
     box-shadow: 0px 3px 10px 10px;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    max-width: 850px;
 }
 .work-data-content {
     z-index: 993;
@@ -34,29 +36,101 @@
 }
 
 .work-data-container > img {
-    width: 38%;
-    margin: 10px;
+    width: 33%;
+    max-width: 250px;
+    margin: 20px;
 }
-.work-data {
-    width: 50%;
+.work-data-right {
+    width: 55%;
     min-width: 300px;
-    min-height: 250px;
-    background: blueviolet;
-    margin: 10px;
+    margin: 20px;
 }
+.work-data-right > .d-flex {
+    justify-content: space-between;
+    margin: 15px 0px;
+}
+.work-data-right .title {
+    font-size: 30px;
+}
+.work-data-right .timespan {
+    font-size: 14px;
+    background: #bbb;
+    padding: 10px;
+}
+
+.work-data-bottom {
+    width: 100%;
+    margin: 20px;
+}
+.techstack {
+    margin-bottom: 5px;
+    padding: 5px 0px;
+    color: #fd2155;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: flex;
+    flex-flow: wrap;
+}
+.techstack > .techstack-item {
+    border: 2px solid #d1334d;
+    padding: 2px 8px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+.work-btns {
+    display: flex;
+    justify-content: flex-end;
+}
+.work-btn {
+    text-align: center;
+    width: 120px;
+    padding: 8px 0px;
+    margin: 0px 10px;
+    background-color: var(--theme-red);
+    color: white;
+    font-size: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.work-btn:hover {
+    background-color: #c82a4f;
+}
+
+.work-btn-icon {
+    font-size: 25px;
+    margin-bottom: -6.5px;
+}
+
 @media (max-width: 800px) {
+    .work-data-right {
+        width: 100%;
+    }
     .work-data-container > img {
-        width: 250px;
+        width: 200px;
+        height: 200px;
     }
     .work-data-container {
-        margin: 0;
         width: 100vw;
-        top: 10vh;
-        left: 0;
     }
 }
 @media (max-width: 550px) {
+    .work-data-right {
+        margin: 10px;
+    }
+    .work-data-bottom {
+        margin: 10px;
+    }
     .work-data-container {
         justify-content: center;
+        overflow-y: auto;
+    }
+    .techstack {
+        font-size: 12px;
+    }
+    .techstack > .techstack-item {
+        border: 1px solid #d1334d;
     }
 }

@@ -35,7 +35,7 @@ export default function Contact({ selectedTab }) {
                             <span
                                 className="link"
                                 style={{ cursor: "pointer" }}
-                                onClick={() => window.location.href.assign("mailto:can.tejasj@gmail.com")}
+                                onClick={() => window.location.assign("mailto:can.tejasj@gmail.com")}
                             >
                                 can.tejasj@gmail.com
                             </span>
