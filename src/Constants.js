@@ -137,7 +137,7 @@ export const WorkList = {
         time: "Feb 2018",
         techstack: ["HTML-CSS", "JavaScript"],
         description: ["Tried to copy a bootstrap tempelate that I found online."],
-        codeUrl: "https://github.com/TeeeJaey/ChatBot",
-        liveUrl: "https://teeejaey.github.io/csb-hjc9p/",
+        codeUrl: "https://github.com/TeeeJaey/MYWAY",
+        liveUrl: "https://teeejaey.github.io/Projects/MyWay/MYWAY.html",
     },
 };

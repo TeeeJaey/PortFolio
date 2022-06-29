@@ -48,9 +48,11 @@
 .work-data-right > .d-flex {
     justify-content: space-between;
     margin: 15px 0px;
+    align-items: center;
 }
 .work-data-right .title {
     font-size: 30px;
+    font-weight: bold;
 }
 .work-data-right .timespan {
     font-size: 14px;
@@ -119,6 +121,9 @@
 @media (max-width: 550px) {
     .work-data-right {
         margin: 10px;
+    }
+    .work-data-right .title {
+        font-size: 25px;
     }
     .work-data-bottom {
         margin: 10px;

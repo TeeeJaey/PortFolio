@@ -4,33 +4,46 @@ import { menuBarIndex } from "../../Constants";
 import myImg from "../../images/profileTransparent.png";
 
 export default function Welcome({ selectedTab }) {
+    const addAnimation = element => {
+        element.classList.add("animate");
+        setTimeout(() => {
+            element.classList.remove("animate");
+        }, 750);
+    };
+    const animateName = () => {
+        const T = document.getElementById("T");
+        const E = document.getElementById("E");
+        const J = document.getElementById("J");
+        const A = document.getElementById("A");
+        const S = document.getElementById("S");
+
+        setTimeout(() => addAnimation(T), 1000);
+        setTimeout(() => addAnimation(E), 1100);
+        setTimeout(() => addAnimation(J), 1200);
+        setTimeout(() => addAnimation(A), 1300);
+        setTimeout(() => addAnimation(S), 1400);
+
+        T.addEventListener("mouseover", () => addAnimation(T));
+        T.addEventListener("mouseover", () => addAnimation(E));
+        T.addEventListener("mouseover", () => addAnimation(J));
+        T.addEventListener("mouseover", () => addAnimation(A));
+        T.addEventListener("mouseover", () => addAnimation(S));
+
+        return () => {
+            T.removeEventListener("mouseover", () => addAnimation(T));
+            T.removeEventListener("mouseover", () => addAnimation(E));
+            T.removeEventListener("mouseover", () => addAnimation(J));
+            T.removeEventListener("mouseover", () => addAnimation(A));
+            T.removeEventListener("mouseover", () => addAnimation(S));
+        };
+    };
+
     useEffect(() => {
         if (selectedTab !== menuBarIndex.Welcome) {
             document.getElementById("welcome").classList.add("off");
         } else {
             document.getElementById("welcome").classList.remove("off");
-
-            const addAnimation = e => {
-                console.log(e.target);
-                e.target.classList.add("animate");
-                setTimeout(() => {
-                    e.target.classList.remove("animate");
-                }, 750);
-            };
-
-            document.getElementById("T").addEventListener("mouseover", addAnimation);
-            document.getElementById("E").addEventListener("mouseover", addAnimation);
-            document.getElementById("J").addEventListener("mouseover", addAnimation);
-            document.getElementById("A").addEventListener("mouseover", addAnimation);
-            document.getElementById("S").addEventListener("mouseover", addAnimation);
-
-            return () => {
-                document.getElementById("T").removeEventListener("mouseover", addAnimation);
-                document.getElementById("E").removeEventListener("mouseover", addAnimation);
-                document.getElementById("J").removeEventListener("mouseover", addAnimation);
-                document.getElementById("A").removeEventListener("mouseover", addAnimation);
-                document.getElementById("S").removeEventListener("mouseover", addAnimation);
-            };
+            return animateName();
         }
     }, [selectedTab]);
 

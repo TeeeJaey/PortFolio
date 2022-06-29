@@ -28,7 +28,7 @@
 }
 .profile-pic > img {
     width: 250px;
-    height: auto;
+    height: 250px;
     border: 5px solid var(--theme-red);
     border-radius: 50%;
 }
