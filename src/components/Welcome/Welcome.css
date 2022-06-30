@@ -1,13 +1,10 @@
-#welcome {
-    top: 22vh;
-}
 #welcome.off {
     margin-left: -110vw;
 }
 #welcome .content-container {
     font-family: "Alfa Slab One", cursive;
     justify-content: space-around;
-    margin: 20px;
+    margin-left: 15px;
     flex-flow: wrap;
 }
 .welcome-content {
@@ -23,7 +20,6 @@
     opacity: 0.8;
 }
 .profile-pic {
-    width: 400px;
     display: flex;
 }
 .profile-pic > img {
@@ -31,25 +27,6 @@
     height: 250px;
     border: 5px solid var(--theme-red);
     border-radius: 50%;
-}
-
-@media (max-width: 860px) {
-    #welcome .content-container {
-        justify-content: space-between;
-    }
-    .welcome-content {
-        font-size: 3rem;
-    }
-    .welcome-name {
-        font-size: 4rem;
-    }
-    .profile-pic > img {
-        width: 80%;
-        max-width: 300px;
-    }
-    .waviy {
-        display: flex;
-    }
 }
 
 /* Name Animation*/
@@ -72,5 +49,18 @@
     }
     20% {
         transform: translateY(-20px);
+    }
+}
+
+@media (max-width: 860px) {
+    #welcome .content-container {
+        justify-content: space-between;
+        max-height: 77vh;
+    }
+    .welcome-content {
+        font-size: 35px;
+    }
+    .welcome-name {
+        font-size: 50px;
     }
 }

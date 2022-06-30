@@ -61,7 +61,9 @@ export default function Experience({ selectedTab }) {
                         </div>
                     </div>
                     <div className="d-flex edex-item">
-                        <div className="edex-span">Jul 2018 - Dec 2021</div>
+                        <div className="edex-span">
+                            Jul 2018 <br />- Dec 2021
+                        </div>
                         <div className="edex-value">
                             <div className="edex-title">FullStack Developer</div>
                             <div className="edex-company">

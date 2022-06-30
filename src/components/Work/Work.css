@@ -1,6 +1,9 @@
 #work.off {
     margin-left: 120vw;
 }
+#work .text {
+    margin-bottom: 15px;
+}
 
 .work-list {
     overflow: auto;
@@ -17,4 +20,10 @@
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+}
+
+@media (max-width: 860px) {
+    #work .text {
+        font-size: 15px;
+    }
 }

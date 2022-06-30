@@ -10,6 +10,7 @@ export default function Welcome({ selectedTab }) {
             element.classList.remove("animate");
         }, 750);
     };
+
     const animateName = () => {
         const T = document.getElementById("T");
         const E = document.getElementById("E");
@@ -24,17 +25,17 @@ export default function Welcome({ selectedTab }) {
         setTimeout(() => addAnimation(S), 1400);
 
         T.addEventListener("mouseover", () => addAnimation(T));
-        T.addEventListener("mouseover", () => addAnimation(E));
-        T.addEventListener("mouseover", () => addAnimation(J));
-        T.addEventListener("mouseover", () => addAnimation(A));
-        T.addEventListener("mouseover", () => addAnimation(S));
+        E.addEventListener("mouseover", () => addAnimation(E));
+        J.addEventListener("mouseover", () => addAnimation(J));
+        A.addEventListener("mouseover", () => addAnimation(A));
+        S.addEventListener("mouseover", () => addAnimation(S));
 
         return () => {
             T.removeEventListener("mouseover", () => addAnimation(T));
-            T.removeEventListener("mouseover", () => addAnimation(E));
-            T.removeEventListener("mouseover", () => addAnimation(J));
-            T.removeEventListener("mouseover", () => addAnimation(A));
-            T.removeEventListener("mouseover", () => addAnimation(S));
+            E.removeEventListener("mouseover", () => addAnimation(E));
+            J.removeEventListener("mouseover", () => addAnimation(J));
+            A.removeEventListener("mouseover", () => addAnimation(A));
+            S.removeEventListener("mouseover", () => addAnimation(S));
         };
     };
 
@@ -43,8 +44,8 @@ export default function Welcome({ selectedTab }) {
             document.getElementById("welcome").classList.add("off");
         } else {
             document.getElementById("welcome").classList.remove("off");
-            return animateName();
         }
+        return animateName();
     }, [selectedTab]);
 
     return (
@@ -74,7 +75,7 @@ export default function Welcome({ selectedTab }) {
                             </span>
                         </div>
                         <hr style={{ borderColor: "rgb(5 253 216 / 0.5)" }} />
-                        <div className="welcome-caption">Web Developer</div>
+                        <div className="welcome-caption">Software Developer</div>
                         <hr style={{ borderColor: "rgb(5 253 216 / 0.5)" }} />
                     </div>
                     <div className="profile-pic">

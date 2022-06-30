@@ -21,7 +21,7 @@ export default function Work({ selectedTab }) {
 
             <div id="work" className="main-view off">
                 <div className="header">Work</div>
-                <div>
+                <div className="text">
                     I have made some really cool <span className="highlight">personal projects</span>
                 </div>
                 <div className="work-list">

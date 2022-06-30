@@ -3,7 +3,6 @@
 }
 #education .content-container {
     overflow-y: auto;
-    max-height: 65vh;
     margin-top: 10px;
 }
 .total-exp {
