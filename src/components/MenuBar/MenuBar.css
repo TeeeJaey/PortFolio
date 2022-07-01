@@ -56,28 +56,28 @@
 }
 
 .btn0 {
-    transition: margin 0.5s;
+    transition: color 0.3s, margin 0.5s;
 }
 .btn1 {
-    transition: margin 0.65s;
+    transition: color 0.3s, margin 0.65s;
 }
 .btn2 {
-    transition: margin 0.85s;
+    transition: color 0.3s, margin 0.85s;
 }
 .btn3 {
-    transition: margin 1s;
+    transition: color 0.3s, margin 1s;
 }
 .btn4 {
-    transition: margin 1.15s;
+    transition: color 0.3s, margin 1.15s;
 }
 .btn5 {
-    transition: margin 1.3s;
+    transition: color 0.3s, margin 1.3s;
 }
 .btn6 {
-    transition: margin 1.5s;
+    transition: color 0.3s, margin 1.5s;
 }
 .btn7 {
-    transition: margin 1.6s;
+    transition: color 0.3s, margin 1.6s;
 }
 
 .mobile-close-icon {

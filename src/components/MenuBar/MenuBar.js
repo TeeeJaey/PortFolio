@@ -27,6 +27,7 @@ export default function MenuBar({ selectedTab, menuBtns, setSelectedTab, showing
             clearTimeout(timeout);
         };
     }, []);
+
     useEffect(() => {
         const menuBar = document.getElementsByClassName("menu-bar");
         if (showingMobileMenu) {
