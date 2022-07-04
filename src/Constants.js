@@ -8,6 +8,7 @@ import SignatureVerifierImg from "./images/SignatureVerifier.png";
 import RaceItImg from "./images/RaceIt.png";
 import MeditationImg from "./images/Meditation.png";
 import SnakeLadderImg from "./images/SnakeLadder.png";
+import MobileProfileImg from "./images/MobileProfileImg.png";
 
 export const menuBarIndex = {
     Welcome: -1,
@@ -44,7 +45,7 @@ export const WorkList = {
         techstack: ["JavaScript", "Vue-JS", "HTML-CSS"],
         description: ["Set of Board games made in HTML / JavaScript", "Include games like Business, Wordle, Ludo, Tetris, 2048, etc."],
         codeUrl: "https://github.com/TeeeJaey/BoardGames",
-        liveUrl: "https://teeejaey.github.io/Projects/BoardGames/BoardGames.html",
+        liveUrl: "https://teeejaey.github.io/BoardGames",
     },
     MernPos: {
         id: "MernPos",
@@ -71,7 +72,7 @@ export const WorkList = {
             "Best viewed on a phone",
         ],
         codeUrl: "https://github.com/TeeeJaey/ChatBot",
-        liveUrl: "https://teeejaey.github.io/csb-hjc9p/",
+        liveUrl: "https://teeejaey.github.io/ChatBot-live",
     },
     Meditation: {
         id: "Meditation",
@@ -130,7 +131,7 @@ export const WorkList = {
         description: ["Android app developed on Android studio", "Snakes and Ladders, a very famous board game form the 70s"],
         codeUrl: "https://github.com/TeeeJaey/Snakes-Ladder",
     },
-    MyWayImg: {
+    MyWay: {
         id: "MyWay",
         image: MyWayImg,
         title: "MyWay",

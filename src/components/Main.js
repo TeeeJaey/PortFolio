@@ -43,7 +43,7 @@ export default function Main() {
             <Experience selectedTab={selectedTab} />
             <Skills selectedTab={selectedTab} />
             <Education selectedTab={selectedTab} />
-            <Work selectedTab={selectedTab} />
+            <Work selectedTab={selectedTab} setSelectedTab={tab => setSelectedTab(tab)} />
             <Interests selectedTab={selectedTab} />
             <Contact selectedTab={selectedTab} />
         </div>

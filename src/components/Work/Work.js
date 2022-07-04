@@ -4,7 +4,7 @@ import { menuBarIndex, WorkList } from "../../Constants";
 import WorkItem from "./WorkItem";
 import WorkData from "./WorkData";
 
-export default function Work({ selectedTab }) {
+export default function Work({ selectedTab, setSelectedTab }) {
     const [showData, setShowData] = useState(null);
 
     useEffect(() => {
@@ -23,6 +23,18 @@ export default function Work({ selectedTab }) {
                 <div className="header">Work</div>
                 <div className="text">
                     I have made some really cool <span className="highlight">personal projects</span>
+                    <br />
+                    Checkout my
+                    <span
+                        className="link"
+                        onClick={() => {
+                            setSelectedTab(6);
+                        }}
+                    >
+                        {" "}
+                        github{" "}
+                    </span>
+                    page for more
                 </div>
                 <div className="work-list">
                     <ul>
