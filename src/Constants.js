@@ -35,7 +35,7 @@ export const WorkList = {
             "Responsive enough to be viewed on any device. (desktop to mobile)",
         ],
         codeUrl: "https://github.com/TeeeJaey/Movie-Trailers-React",
-        liveUrl: "https://teeejaey.github.io/csb-u4u39z/",
+        liveUrl: "https://teeejaey.github.io/Movie-Trailers-Live/",
     },
     BoardGames: {
         id: "BoardGames",
