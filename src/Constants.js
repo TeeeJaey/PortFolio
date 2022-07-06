@@ -11,17 +11,25 @@ import SnakeLadderImg from "./images/SnakeLadder.png";
 import MobileMailImg from "./images/MobileMailImg.png";
 
 export const menuBarIndex = {
-    Welcome: -1,
-    About: 0,
-    Experience: 1,
-    Skills: 2,
-    Education: 3,
-    Work: 4,
-    Interests: 5,
-    Contact: 6,
+  Welcome: -1,
+  About: 0,
+  Experience: 1,
+  Skills: 2,
+  Education: 3,
+  Work: 4,
+  Interests: 5,
+  Contact: 6
 };
 
-export const menuBtns = ["About", "Experience", "Skills", "Education", "Work", "Interests", "Contact"];
+export const menuBtns = [
+  "About",
+  "Experience",
+  "Skills",
+  "Education",
+  "Work",
+  "Interests",
+  "Contact"
+];
 
 export const WorkList = {
     MovieTrailers: {
