@@ -8,7 +8,7 @@ import SignatureVerifierImg from "./images/SignatureVerifier.png";
 import RaceItImg from "./images/RaceIt.png";
 import MeditationImg from "./images/Meditation.png";
 import SnakeLadderImg from "./images/SnakeLadder.png";
-import MobileProfileImg from "./images/MobileProfileImg.png";
+import MobileMailImg from "./images/MobileMailImg.png";
 
 export const menuBarIndex = {
     Welcome: -1,
@@ -72,7 +72,7 @@ export const WorkList = {
             "Best viewed on a phone",
         ],
         codeUrl: "https://github.com/TeeeJaey/ChatBot",
-        liveUrl: "https://teeejaey.github.io/ChatBot-live",
+        liveUrl: "https://teeejaey.github.io/ChatBot-Live",
     },
     Meditation: {
         id: "Meditation",
@@ -140,5 +140,15 @@ export const WorkList = {
         description: ["Tried to copy a bootstrap tempelate that I found online."],
         codeUrl: "https://github.com/TeeeJaey/MYWAY",
         liveUrl: "https://teeejaey.github.io/Projects/MyWay/MYWAY.html",
+    },
+    MobileMail: {
+        id: "MobileMail",
+        image: MobileMailImg,
+        title: "Mobile Mail",
+        time: "Feb 2018",
+        techstack: ["HTML-CSS"],
+        description: ["A mobile mail page UI"],
+        codeUrl: "https://gist.github.com/TeeeJaey/7c448bc5f0c990d9144a59f6b37b452f",
+        liveUrl: "https://teeejaey.github.io/Projects/mobile.html",
     },
 };
