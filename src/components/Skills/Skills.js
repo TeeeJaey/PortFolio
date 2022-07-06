@@ -16,7 +16,7 @@ export default function Skills({ selectedTab }) {
             <div id="skills" className="main-view off">
                 <div className="header">Skills</div>
 
-                <div className="content-container"> Coming Soon </div>
+                <div className="content-container"> COMING SOON </div>
             </div>
         </>
     );
