@@ -76,7 +76,7 @@ export default function Contact({ selectedTab }) {
                                 TeeeJaey
                             </span>{" "}
                             /{" "}
-                            <span className="link" style={{ cursor: "pointer" }} onClick={() => window.open("https://gist.github.com/TeeeJaey")}>
+                            <span className="link" onClick={() => window.open("https://gist.github.com/TeeeJaey")}>
                                 TeeeJaey-gists
                             </span>
                         </div>

@@ -16,7 +16,7 @@ export default function Interests({ selectedTab }) {
             <div id="interests" className="main-view off">
                 <div className="header">Interests</div>
 
-                <div className="content-container"></div>
+                <div className="content-container"> Coming Soon </div>
             </div>
         </>
     );
