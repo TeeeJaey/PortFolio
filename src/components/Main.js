@@ -19,7 +19,7 @@ export default function Main() {
     const [showingMobileMenu, setShowingMobileMenu] = useState(false);
 
     useEffect(() => {
-        setTimeout(() => setSelectedTab(menuBarIndex.Welcome), 500);
+        setTimeout(() => setSelectedTab(menuBarIndex.Skills), 500);
     }, []);
 
     return (

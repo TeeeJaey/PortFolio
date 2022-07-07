@@ -33,7 +33,7 @@ export default function Education({ selectedTab }) {
                             </div>
                             <ul className="edex-content">
                                 <li>
-                                    Passed out with a CGPA of <span class="highlight">3.32</span>
+                                    Passed out with a CGPA of <span className="highlight">3.32</span>
                                 </li>
                                 <li>
                                     Wrote & Published a Technical Research paper on{" "}
@@ -63,7 +63,7 @@ export default function Education({ selectedTab }) {
                             </div>
                             <ul className="edex-content">
                                 <li>
-                                    Passed out with a CGPA of <span class="highlight">2.70</span>
+                                    Passed out with a CGPA of <span className="highlight">2.70</span>
                                 </li>
                             </ul>
                             <div className="edex-image-mobile">

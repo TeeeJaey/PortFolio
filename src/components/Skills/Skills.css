@@ -1,3 +1,18 @@
 #skills.off {
     margin-left: -120vw;
 }
+
+#skills > .content-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#skills > .content-container > .skill-graph {
+    min-width: 350px;
+    width: 40%;
+    margin: 20px 5px;
+    padding: 10px 0px;
+    border: 2px solid #2df2d420;
+    text-align: center;
+}

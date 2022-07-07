@@ -38,8 +38,8 @@ export default function Work({ selectedTab, setSelectedTab }) {
                 </div>
                 <div className="work-list">
                     <ul>
-                        {Object.keys(WorkList).map(key => {
-                            return <WorkItem workItemClicked={name => setShowData(name)} image={WorkList[key].image} name={key} />;
+                        {Object.keys(WorkList).map((key, index) => {
+                            return <WorkItem key={index} workItemClicked={name => setShowData(name)} image={WorkList[key].image} name={key} />;
                         })}
                     </ul>
                 </div>
