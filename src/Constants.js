@@ -9,6 +9,7 @@ import RaceItImg from "./images/RaceIt.png";
 import MeditationImg from "./images/Meditation.png";
 import SnakeLadderImg from "./images/SnakeLadder.png";
 import MobileMailImg from "./images/MobileMailImg.png";
+import PortFolioImg from "./images/PortFolioImg.png";
 
 export const menuBarIndex = {
     Welcome: -1,
@@ -163,6 +164,16 @@ export const WorkList = {
         techstack: ["Unity 3D", "C#"],
         description: ["A car racing game designed on Unity 3D engine", "Allows player to race with his/her car against few other cars"],
         codeUrl: "https://github.com/TeeeJaey/RaceIt-1.0",
+    },
+    PortFolio: {
+        id: "PortFolio",
+        image: PortFolioImg,
+        title: "Portfolio",
+        time: "Feb 2018",
+        techstack: ["React", "Javascript", "HTML-CSS"],
+        description: ["My portfolio App written in React", "Can be viewed in desktop or mobiles"],
+        codeUrl: "https://github.com/TeeeJaey/PortFolio",
+        liveUrl: "https://teeejaey.github.io",
     },
     SnakeLadder: {
         id: "SnakeLadder",
