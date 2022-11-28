@@ -18,11 +18,10 @@ export const menuBarIndex = {
     Skills: 2,
     Education: 3,
     Work: 4,
-    Interests: 5,
-    Contact: 6,
+    Contact: 5,
 };
 
-export const menuBtns = ["About", "Experience", "Skills", "Education", "Work", "Interests", "Contact"];
+export const menuBtns = ["About", "Experience", "Skills", "Education", "Work", "Contact"];
 
 export const SkillList = [
     {

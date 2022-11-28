@@ -37,7 +37,7 @@ export default function About({ selectedTab, setSelectedTab }) {
                         <div
                             className="link"
                             onClick={() => {
-                                setSelectedTab(6);
+                                setSelectedTab(menuBarIndex.Contact);
                             }}
                         >
                             Let's get in Touch
