@@ -7,7 +7,7 @@
     text-align: right;
     font-style: italic;
     line-height: 22px;
-    border-right: 1px solid #fd2155;
+    border-right: 1px solid var(--theme-red);
     padding: 10px;
     padding-left: 0px;
     position: relative;
@@ -22,9 +22,9 @@
     display: block;
     width: 8px;
     height: 8px;
-    border: 2px solid #fd2155;
+    border: 2px solid var(--theme-red);
     border-radius: 50%;
-    background-color: #fd2155;
+    background-color: var(--theme-red);
 }
 .edex-value {
     padding: 10px;
@@ -45,7 +45,7 @@
 .edex-techstack {
     margin-bottom: 5px;
     padding: 5px 0px;
-    color: #fd2155;
+    color: var(--theme-red);
     font-weight: 400;
     font-size: 12px;
     text-transform: uppercase;

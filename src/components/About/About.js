@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import "./About.css";
 import { menuBarIndex } from "../../Constants";
+import { getExperience } from "../Experience/Experience";
+import { Link } from "react-router-dom";
 
 export default function About({ selectedTab, setSelectedTab }) {
     useEffect(() => {
@@ -18,12 +20,12 @@ export default function About({ selectedTab, setSelectedTab }) {
 
                 <div className="content-container">
                     <div className="content">
-                        I am <span className="highlight name">Tejas Jadhav</span>.
+                        Hi, I am <span className="highlight name">Tejas Jadhav</span>.
                         <br /> A 90s kid living in Mumbai.
                     </div>
                     <div className="content">
                         Full-Stack / Front-end <span className="highlight"> Web Developer </span> & FreeLancer with over
-                        <span className="highlight"> 3 years of experience</span>.
+                        <span className="highlight"> {getExperience().years} years of experience</span>.
                         <br />I have a <span className="highlight">Master degree</span> in Computer Engineering.
                     </div>
                     <div className="content">
@@ -34,14 +36,16 @@ export default function About({ selectedTab, setSelectedTab }) {
                     <div className="content">
                         Interested in working with me ?
                         <br />
-                        <div
-                            className="link"
-                            onClick={() => {
-                                setSelectedTab(menuBarIndex.Contact);
-                            }}
-                        >
-                            Let's get in Touch
-                        </div>
+                        <Link to={"/Contact"}>
+                            <div
+                                className="link"
+                                onClick={() => {
+                                    setSelectedTab(menuBarIndex.Contact);
+                                }}
+                            >
+                                Let's get in Touch
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </div>

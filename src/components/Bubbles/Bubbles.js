@@ -9,6 +9,7 @@ export default function Bubbles() {
             <div className="bubble x3"></div>
             <div className="bubble x4"></div>
             <div className="bubble x5"></div>
+            <div className="bubble x6"></div>
         </div>
     );
 }

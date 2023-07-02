@@ -43,11 +43,11 @@ export default function Education({ selectedTab }) {
                                 </li>
                             </ul>
                             <div className="edex-image-mobile">
-                                <img src={mtechImg} />
+                                <img src={mtechImg} alt="mtechImg" />
                             </div>
                         </div>
                         <div className="edex-image">
-                            <img src={mtechImg} />
+                            <img src={mtechImg} alt="mtechImg" />
                         </div>
                     </div>
                     <div className="d-flex edex-item">
@@ -67,11 +67,11 @@ export default function Education({ selectedTab }) {
                                 </li>
                             </ul>
                             <div className="edex-image-mobile">
-                                <img src={btechImg} />
+                                <img src={btechImg} alt="btechImg" />
                             </div>
                         </div>
                         <div className="edex-image">
-                            <img src={btechImg} />
+                            <img src={btechImg} alt="btechImg" />
                         </div>
                     </div>
                 </div>

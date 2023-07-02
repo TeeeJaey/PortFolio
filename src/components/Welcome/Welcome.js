@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./Welcome.css";
 import { menuBarIndex } from "../../Constants";
 import myImg from "../../images/profileTransparent.png";
+import { useCallback } from "react";
 
 export default function Welcome({ selectedTab }) {
     const addAnimation = element => {
@@ -11,7 +12,7 @@ export default function Welcome({ selectedTab }) {
         }, 750);
     };
 
-    const animateName = () => {
+    const animateName = useCallback(() => {
         const T = document.getElementById("T");
         const E = document.getElementById("E");
         const J = document.getElementById("J");
@@ -37,7 +38,7 @@ export default function Welcome({ selectedTab }) {
             A.removeEventListener("mouseover", () => addAnimation(A));
             S.removeEventListener("mouseover", () => addAnimation(S));
         };
-    };
+    }, []);
 
     useEffect(() => {
         if (selectedTab !== menuBarIndex.Welcome) {
@@ -46,7 +47,7 @@ export default function Welcome({ selectedTab }) {
             document.getElementById("welcome").classList.remove("off");
         }
         return animateName();
-    }, [selectedTab]);
+    }, [selectedTab, animateName]);
 
     return (
         <>
@@ -79,7 +80,7 @@ export default function Welcome({ selectedTab }) {
                         <hr style={{ borderColor: "rgb(5 253 216 / 0.5)" }} />
                     </div>
                     <div className="profile-pic">
-                        <img src={myImg} />
+                        <img src={myImg} alt={myImg} />
                     </div>
                 </div>
             </div>

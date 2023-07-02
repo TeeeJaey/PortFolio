@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 import About from "./About/About";
 import MenuBar from "./MenuBar/MenuBar";
 import Submarine from "./Submarine/Submarine";
@@ -15,11 +16,14 @@ import Interests from "./Interests/Interests";
 import { menuBarIndex, menuBtns } from "../Constants";
 
 export default function Main() {
+    const location = useLocation();
     const [selectedTab, setSelectedTab] = useState(-2);
     const [showingMobileMenu, setShowingMobileMenu] = useState(false);
 
     useEffect(() => {
-        setTimeout(() => setSelectedTab(menuBarIndex.Welcome), 500);
+        const path = location.pathname.split("/")[1];
+        if (path) setTimeout(() => setSelectedTab(menuBtns.indexOf(path)), 500);
+        else setTimeout(() => setSelectedTab(menuBarIndex.Welcome), 500);
     }, []);
 
     return (
@@ -37,15 +41,16 @@ export default function Main() {
                 setSelectedTab={tab => setSelectedTab(tab)}
             />
             <Submarine />
-
-            <Welcome selectedTab={selectedTab} />
-            <About selectedTab={selectedTab} setSelectedTab={tab => setSelectedTab(tab)} />
-            <Experience selectedTab={selectedTab} />
-            <Skills selectedTab={selectedTab} />
-            <Education selectedTab={selectedTab} />
-            <Work selectedTab={selectedTab} setSelectedTab={tab => setSelectedTab(tab)} />
-            <Interests selectedTab={selectedTab} />
-            <Contact selectedTab={selectedTab} />
+            <Routes>
+                <Route path="/" element={<Welcome selectedTab={selectedTab} />} />
+                <Route path={"/" + menuBtns[0]} element={<About selectedTab={selectedTab} setSelectedTab={tab => setSelectedTab(tab)} />} />
+                <Route path={"/" + menuBtns[1]} element={<Experience selectedTab={selectedTab} />} />
+                <Route path={"/" + menuBtns[2]} element={<Skills selectedTab={selectedTab} />} />
+                <Route path={"/" + menuBtns[3]} element={<Education selectedTab={selectedTab} />} />
+                <Route path={"/" + menuBtns[4] + "/*"} element={<Work selectedTab={selectedTab} setSelectedTab={tab => setSelectedTab(tab)} />} />
+                <Route path={"/" + menuBtns[5]} element={<Contact selectedTab={selectedTab} />} />
+                <Route path={"/" + menuBtns[6]} element={<Interests selectedTab={selectedTab} />} />
+            </Routes>
         </div>
     );
 }

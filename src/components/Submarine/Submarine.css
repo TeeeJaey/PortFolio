@@ -13,7 +13,7 @@
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background-color: #05fdd8;
+    background-color: var(--theme-blue);
     opacity: 0.9;
     animation: bubble1-h-movement 1s ease-in infinite, bubble1-v-movement 300ms ease-in-out infinite alternate,
         bubble-scale-movement 300ms ease-in-out infinite alternate;
@@ -63,7 +63,7 @@
     height: 0;
     border-style: solid;
     border-width: 0 30px 120px 35px;
-    border-color: transparent transparent #05fdd8 transparent;
+    border-color: transparent transparent var(--theme-blue) transparent;
     transform: rotate(-50deg);
     top: 40px;
     left: 99%;

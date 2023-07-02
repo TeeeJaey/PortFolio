@@ -17,12 +17,13 @@
 }
 
 body {
-    background: #1d1d1d;
-    margin: 0;
-    font-family: "Open Sans", sans-serif;
     --theme-blue: #05fdd8;
     --theme-red: #fd2155;
     --theme-background: #132a27;
+
+    background: #1d1d1d;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
 }
 
 .d-none {
@@ -34,4 +35,8 @@ body {
 .d-flex-col {
     display: flex;
     flex-direction: column;
+}
+
+a {
+    text-decoration: none;
 }

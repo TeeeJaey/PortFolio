@@ -9,7 +9,7 @@
 .bubble {
     width: 60px;
     height: 60px;
-    background: #05fdd8;
+    background: var(--theme-blue);
     border-radius: 200px;
     -moz-border-radius: 200px;
     -webkit-border-radius: 200px;
@@ -66,6 +66,17 @@
     -webkit-animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
     -moz-animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
     -o-animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
+}
+.x6 {
+    right: 30%;
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    transform: scale(0.3);
+    opacity: 0.9;
+    animation: moveclouds 2s linear infinite, sideWays 8s ease-in-out infinite alternate;
+    -webkit-animation: moveclouds 2s linear infinite, sideWays 8s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 2s linear infinite, sideWays 8s ease-in-out infinite alternate;
+    -o-animation: moveclouds 2s linear infinite, sideWays 8s ease-in-out infinite alternate;
 }
 
 @-webkit-keyframes moveclouds {

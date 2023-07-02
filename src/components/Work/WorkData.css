@@ -67,7 +67,7 @@
 .techstack {
     margin-bottom: 5px;
     padding: 5px 0px;
-    color: #fd2155;
+    color: var(--theme-red);
     font-weight: 400;
     font-size: 14px;
     text-transform: uppercase;

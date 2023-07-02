@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./Skills.css";
-import { menuBarIndex, SkillList } from "../../Constants";
+import { menuBarIndex } from "../../Constants";
+import { SkillList } from "./SkillList";
 import SkillGraph from "./SkillGraph";
 
 export default function Skills({ selectedTab }) {

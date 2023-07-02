@@ -1,14 +1,17 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { MdClose, MdSmartDisplay } from "react-icons/md";
 import { RiCodeBoxFill } from "react-icons/ri";
 import "./WorkData.css";
+import { Link } from "react-router-dom";
 
 export default function WorkData({ data, onClose }) {
     return (
         <div className="work-data">
             <div className="work-data-container">
-                <MdClose className="word-data-close-btn" onClick={() => onClose()} />
-                <img src={data.image}></img>
+                <Link to="/Work">
+                    <MdClose className="word-data-close-btn" onClick={() => onClose()} />
+                </Link>
+                <img src={data.image} alt={data.id}></img>
 
                 <div className="work-data-right">
                     <div className="d-flex">
@@ -16,8 +19,10 @@ export default function WorkData({ data, onClose }) {
                         <div className="timespan">{data.time}</div>
                     </div>
                     <div className="techstack">
-                        {data.techstack.map(tech => (
-                            <span className="techstack-item">{tech}</span>
+                        {data.techstack.map((tech, index) => (
+                            <span key={index} className="techstack-item">
+                                {tech}
+                            </span>
                         ))}
                     </div>
                     <div className="work-btns">
@@ -37,8 +42,8 @@ export default function WorkData({ data, onClose }) {
                 <div className="work-data-bottom">
                     <h4>Description</h4>
                     <ul className="work-data-desc">
-                        {data.description.map(desc => (
-                            <li>{desc}</li>
+                        {data.description.map((desc, index) => (
+                            <li key={index}>{desc}</li>
                         ))}
                     </ul>
                 </div>

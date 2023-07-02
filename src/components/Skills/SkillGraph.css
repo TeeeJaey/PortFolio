@@ -36,7 +36,7 @@
     color: #a6b8b3;
     text-align: right;
     font-style: italic;
-    border-right: 1px solid #fd2155;
+    border-right: 1px solid var(--theme-red);
     padding: 4px;
     padding-left: 0px;
     position: relative;
@@ -44,7 +44,7 @@
 
 .skill-points {
     position: absolute;
-    color: #a6b8b3;
+    color: #ffffff;
     right: 10px;
     font-style: italic;
 }

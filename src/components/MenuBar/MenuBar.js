@@ -3,6 +3,7 @@ import "./MenuBar.css";
 import TJsvg from "./TJsvg";
 import { MdClose } from "react-icons/md";
 import menuBG from "../../images/menuBG.png";
+import { Link } from "react-router-dom";
 
 export default function MenuBar({ selectedTab, menuBtns, setSelectedTab, showingMobileMenu, setShowingMobileMenu }) {
     useEffect(() => {
@@ -40,32 +41,37 @@ export default function MenuBar({ selectedTab, menuBtns, setSelectedTab, showing
     return (
         <>
             <div className="menu-bar showing animated">
-                <div className="menu-bg-color"></div> <img className="menu-bg" src={menuBG} />
+                <div className="menu-bg-color"></div>
+                <img className="menu-bg" src={menuBG} alt="menu-bg" />
+
                 <div className="mobile-close-icon" onClick={() => setShowingMobileMenu(false)}>
                     <MdClose />
                 </div>
-                <div
-                    className="text-svg animated"
-                    onClick={() => {
-                        setSelectedTab(-1);
-                        setShowingMobileMenu(false);
-                    }}
-                >
-                    <TJsvg />
-                </div>
+                <Link to="/">
+                    <div
+                        className="text-svg animated"
+                        onClick={() => {
+                            setSelectedTab(-1);
+                            setShowingMobileMenu(false);
+                        }}
+                    >
+                        <TJsvg />
+                    </div>
+                </Link>
                 <div className="menu-btns">
                     {menuBtns.map((menuBtn, index) => {
                         return (
-                            <div
-                                key={index}
-                                className={"menu-btn  btn" + index + (selectedTab == index ? " selected" : "")}
-                                onClick={() => {
-                                    setSelectedTab(index);
-                                    setShowingMobileMenu(false);
-                                }}
-                            >
-                                {menuBtn}
-                            </div>
+                            <Link to={"/" + menuBtn} key={index}>
+                                <div
+                                    className={"menu-btn  btn" + index + (selectedTab === index ? " selected" : "")}
+                                    onClick={() => {
+                                        setSelectedTab(index);
+                                        setShowingMobileMenu(false);
+                                    }}
+                                >
+                                    {menuBtn}
+                                </div>
+                            </Link>
                         );
                     })}
                 </div>
