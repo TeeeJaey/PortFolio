@@ -10,6 +10,7 @@ import MeditationImg from "../../images/Meditation.png";
 import SnakeLadderImg from "../../images/SnakeLadder.png";
 import MobileMailImg from "../../images/MobileMailImg.png";
 import PortFolioImg from "../../images/PortFolioImg.png";
+import SeaAdventuresImg from "../../images/SeaAdventures.png";
 
 export const WorkList = {
     MovieTrailers: {
@@ -61,6 +62,16 @@ export const WorkList = {
         ],
         codeUrl: "https://github.com/TeeeJaey/ChatBot",
         liveUrl: "https://teeejaey.github.io/ChatBot",
+    },
+    SeaAdventures: {
+        id: "SeaAdventures",
+        image: SeaAdventuresImg,
+        title: "SeaAdventures",
+        time: "Aug 2023",
+        techstack: ["HTML", "CSS", "Javascript"],
+        description: ["A simple CSS Animation based game", "More stages will soon be added", "Best viewed on a laptop/desktop"],
+        codeUrl: "https://github.com/TeeeJaey/SeaAdventures",
+        liveUrl: "https://teeejaey.github.io/SeaAdventures",
     },
     Meditation: {
         id: "Meditation",
