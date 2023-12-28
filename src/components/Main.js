@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 import About from "./About/About";
 import MenuBar from "./MenuBar/MenuBar";
 import Submarine from "./Submarine/Submarine";
@@ -49,8 +49,15 @@ export default function Main() {
                 <Route path={"/" + menuBtns[3]} element={<Education selectedTab={selectedTab} />} />
                 <Route path={"/" + menuBtns[4] + "/*"} element={<Work selectedTab={selectedTab} setSelectedTab={tab => setSelectedTab(tab)} />} />
                 <Route path={"/" + menuBtns[5]} element={<Contact selectedTab={selectedTab} />} />
-                <Route path={"/" + menuBtns[6]} element={<Interests selectedTab={selectedTab} />} />
+                <Route path={"/Resume"} element={<RedirectPage url={"https://drive.google.com/file/d/1gfGhRxDbSj5LKB2D0EsdT5Ja3Ley6tH8/view"} />} />
             </Routes>
         </div>
     );
 }
+
+const RedirectPage = ({ url }) => {
+    React.useEffect(() => {
+        window.location.replace(url);
+    }, []);
+    return null;
+};

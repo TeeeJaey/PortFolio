@@ -17,6 +17,7 @@ export default function Submarine() {
                         <div className="submarine-body">
                             <div className="window"></div>
                             <div className="engine"></div>
+                            <div className="light-source"></div>
                             <div className="light"></div>
                         </div>
                         <div className="helix"></div>

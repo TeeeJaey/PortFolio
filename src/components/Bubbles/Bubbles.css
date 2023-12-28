@@ -16,6 +16,43 @@
     position: absolute;
 }
 
+@keyframes moveclouds {
+    0% {
+        top: 100vh;
+    }
+    100% {
+        top: -500px;
+    }
+}
+@keyframes sideWays {
+    0% {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    100% {
+        margin-left: 100px;
+        margin-right: -100px;
+    }
+}
+@-webkit-keyframes moveclouds {
+    0% {
+        top: 100vh;
+    }
+    100% {
+        top: -500px;
+    }
+}
+@-webkit-keyframes sideWays {
+    0% {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    100% {
+        margin-left: 100px;
+        margin-right: -100px;
+    }
+}
+
 .x1 {
     -webkit-transform: scale(0.9);
     -moz-transform: scale(0.9);
@@ -73,63 +110,8 @@
     -moz-transform: scale(0.3);
     transform: scale(0.3);
     opacity: 0.9;
-    animation: moveclouds 2s linear infinite, sideWays 8s ease-in-out infinite alternate;
-    -webkit-animation: moveclouds 2s linear infinite, sideWays 8s ease-in-out infinite alternate;
-    -moz-animation: moveclouds 2s linear infinite, sideWays 8s ease-in-out infinite alternate;
-    -o-animation: moveclouds 2s linear infinite, sideWays 8s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes moveclouds {
-    0% {
-        top: 100vh;
-    }
-    100% {
-        top: -500px;
-    }
-}
-
-@-webkit-keyframes sideWays {
-    0% {
-        margin-left: 0px;
-    }
-    100% {
-        margin-left: 100px;
-    }
-}
-
-@-moz-keyframes moveclouds {
-    0% {
-        top: 100vh;
-    }
-
-    100% {
-        top: -500px;
-    }
-}
-
-@-moz-keyframes sideWays {
-    0% {
-        margin-left: 0px;
-    }
-    100% {
-        margin-left: 60px;
-    }
-}
-
-@-o-keyframes moveclouds {
-    0% {
-        top: 100vh;
-    }
-    100% {
-        top: -500px;
-    }
-}
-
-@-o-keyframes sideWays {
-    0% {
-        margin-left: 0px;
-    }
-    100% {
-        margin-left: 50px;
-    }
+    animation: moveclouds 9s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    -webkit-animation: moveclouds 9s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 9s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    -o-animation: moveclouds 9s linear infinite, sideWays 3s ease-in-out infinite alternate;
 }

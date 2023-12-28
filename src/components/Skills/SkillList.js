@@ -7,7 +7,7 @@ export const SkillList = [
             { title: "HTML-CSS", points: 9 },
             { title: "Redux", points: 8 },
             { title: "Angular", points: 8 },
-            { title: "VueJS", points: 7 },
+            { title: "VueJS", points: 6 },
         ],
     },
     {
