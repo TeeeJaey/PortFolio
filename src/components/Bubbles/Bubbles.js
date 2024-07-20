@@ -1,7 +1,7 @@
 import React from "react";
 import "./Bubbles.css";
 
-export default function Bubbles() {
+export function Bubbles() {
     return (
         <div id="bubbles">
             <div className="bubble x1"></div>

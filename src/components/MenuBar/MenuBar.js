@@ -5,7 +5,7 @@ import { MdClose } from "react-icons/md";
 import menuBG from "../../images/menuBG.png";
 import { Link } from "react-router-dom";
 
-export default function MenuBar({ selectedTab, menuBtns, setSelectedTab, showingMobileMenu, setShowingMobileMenu }) {
+export function MenuBar({ selectedTab, menuBtns, setSelectedTab, showingMobileMenu, setShowingMobileMenu }) {
     useEffect(() => {
         const btnanimatedList = document.getElementsByClassName("menu-btn");
         for (let i = btnanimatedList.length - 1; i >= 0; i--) {

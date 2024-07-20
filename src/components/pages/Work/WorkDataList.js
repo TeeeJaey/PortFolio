@@ -1,18 +1,18 @@
-import MovieTrailersImg from "../../images/MovieTrailers.png";
-import BoardGamesImg from "../../images/BoardGames.png";
-import MernPosImg from "../../images/MernPos.png";
-import ChatBotImg from "../../images/ChatBot.png";
-import MyWayImg from "../../images/MyWay.png";
-import SendMyCellImg from "../../images/SendMyCell.png";
-import SignatureVerifierImg from "../../images/SignatureVerifier.png";
-import RaceItImg from "../../images/RaceIt.png";
-import MeditationImg from "../../images/Meditation.png";
-import SnakeLadderImg from "../../images/SnakeLadder.png";
-import MobileMailImg from "../../images/MobileMailImg.png";
-import PortFolioImg from "../../images/PortFolioImg.png";
-import SeaAdventuresImg from "../../images/SeaAdventures.png";
+import MovieTrailersImg from "../../../images/MovieTrailers.png";
+import BoardGamesImg from "../../../images/BoardGames.png";
+import MernPosImg from "../../../images/MernPos.png";
+import ChatBotImg from "../../../images/ChatBot.png";
+import MyWayImg from "../../../images/MyWay.png";
+import SendMyCellImg from "../../../images/SendMyCell.png";
+import SignatureVerifierImg from "../../../images/SignatureVerifier.png";
+import RaceItImg from "../../../images/RaceIt.png";
+import MeditationImg from "../../../images/Meditation.png";
+import SnakeLadderImg from "../../../images/SnakeLadder.png";
+import MobileMailImg from "../../../images/MobileMailImg.png";
+import PortFolioImg from "../../../images/PortFolioImg.png";
+import SeaAdventuresImg from "../../../images/SeaAdventures.png";
 
-export const WorkList = {
+export const WorkDataList = {
     MovieTrailers: {
         id: "MovieTrailers",
         image: MovieTrailersImg,
@@ -32,7 +32,10 @@ export const WorkList = {
         title: "Board Games",
         time: "Aug 2020 - Ongoing",
         techstack: ["JavaScript", "Vue-JS", "HTML-CSS"],
-        description: ["Set of Board games made in HTML / JavaScript", "Include games like Business, Wordle, Ludo, Tetris, 2048, etc."],
+        description: [
+            "Set of Board games made in HTML / JavaScript",
+            "Include games like Business, Wordle, Ludo, Tetris, 2048, etc.",
+        ],
         codeUrl: "https://github.com/TeeeJaey/BoardGames",
         liveUrl: "https://teeejaey.github.io/BoardGames",
     },
@@ -69,7 +72,11 @@ export const WorkList = {
         title: "SeaAdventures",
         time: "Aug 2023",
         techstack: ["HTML", "CSS", "Javascript"],
-        description: ["A simple CSS Animation based game", "More stages will soon be added", "Best viewed on a laptop/desktop"],
+        description: [
+            "A simple CSS Animation based game",
+            "More stages will soon be added",
+            "Best viewed on a laptop/desktop",
+        ],
         codeUrl: "https://github.com/TeeeJaey/SeaAdventures",
         liveUrl: "https://teeejaey.github.io/SeaAdventures",
     },
@@ -118,7 +125,10 @@ export const WorkList = {
         title: "Race It",
         time: "Jan 2017 - April 2017",
         techstack: ["Unity 3D", "C#"],
-        description: ["A car racing game designed on Unity 3D engine", "Allows player to race with his/her car against few other cars"],
+        description: [
+            "A car racing game designed on Unity 3D engine",
+            "Allows player to race with his/her car against few other cars",
+        ],
         codeUrl: "https://github.com/TeeeJaey/RaceIt-1.0",
     },
     PortFolio: {
@@ -137,7 +147,10 @@ export const WorkList = {
         title: "Snake & Ladder",
         time: "Oct 2018",
         techstack: ["Android", "Java"],
-        description: ["Android app developed on Android studio", "Snakes and Ladders, a very famous board game form the 70s"],
+        description: [
+            "Android app developed on Android studio",
+            "Snakes and Ladders, a very famous board game form the 70s",
+        ],
         codeUrl: "https://github.com/TeeeJaey/Snakes-Ladder",
     },
     MyWay: {

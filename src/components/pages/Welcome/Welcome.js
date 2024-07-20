@@ -1,10 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useCallback } from "react";
 import "./Welcome.css";
-import { menuBarIndex } from "../../Constants";
-import myImg from "../../images/profileTransparent.png";
-import { useCallback } from "react";
+import myImg from "../../../images/profileTransparent.png";
+import { useVisible, menuBarIndex } from "../../../helpers";
 
-export default function Welcome({ selectedTab }) {
+export function Welcome({ selectedTab }) {
+    const page = useVisible(selectedTab, menuBarIndex.Welcome);
+
     const addAnimation = element => {
         element.classList.add("animate");
         setTimeout(() => {
@@ -40,18 +41,11 @@ export default function Welcome({ selectedTab }) {
         };
     }, []);
 
-    useEffect(() => {
-        if (selectedTab !== menuBarIndex.Welcome) {
-            document.getElementById("welcome").classList.add("off");
-        } else {
-            document.getElementById("welcome").classList.remove("off");
-        }
-        return animateName();
-    }, [selectedTab, animateName]);
+    useEffect(() => animateName(), [animateName]);
 
     return (
         <>
-            <div id="welcome" className="main-view off">
+            <div id={page} className="main-view off">
                 <div className="content-container d-flex">
                     <div>
                         <div className="welcome-content">

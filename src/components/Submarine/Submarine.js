@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./Submarine.css";
 
-export default function Submarine() {
+export function Submarine() {
     useEffect(() => {
         const seaAnimated = document.getElementsByClassName("sea-animated");
         if (seaAnimated) seaAnimated[0].classList.remove("sea-animated");

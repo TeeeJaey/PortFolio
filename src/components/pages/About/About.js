@@ -1,21 +1,15 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./About.css";
-import { menuBarIndex } from "../../Constants";
 import { getExperience } from "../Experience/Experience";
 import { Link } from "react-router-dom";
+import { useVisible, menuBarIndex } from "../../../helpers";
 
-export default function About({ selectedTab, setSelectedTab }) {
-    useEffect(() => {
-        if (selectedTab !== menuBarIndex.About) {
-            document.getElementById("about").classList.add("off");
-        } else {
-            document.getElementById("about").classList.remove("off");
-        }
-    }, [selectedTab]);
+export function About({ selectedTab, setSelectedTab }) {
+    const page = useVisible(selectedTab, menuBarIndex.About);
 
     return (
         <>
-            <div id="about" className="main-view off">
+            <div id={page} className="main-view off">
                 <div className="header">About</div>
 
                 <div className="content-container">
@@ -29,7 +23,8 @@ export default function About({ selectedTab, setSelectedTab }) {
                         <br />I have a <span className="highlight">Master degree</span> in Computer Engineering.
                     </div>
                     <div className="content">
-                        Well-organised nerd with passion of <span className="highlight"> solving problems </span> having high attention to detail.
+                        Well-organised nerd with passion of <span className="highlight"> solving problems </span> having
+                        high attention to detail.
                         <br />A huge fan of <span className="highlight">cricket </span>, PC games and TV shows
                     </div>
 

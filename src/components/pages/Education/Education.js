@@ -1,22 +1,16 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "../Edu-Exp.css";
 import "./Education.css";
-import { menuBarIndex } from "../../Constants";
-import mtechImg from "../../images/mtechTransparent.png";
-import btechImg from "../../images/btechTransparent.png";
+import mtechImg from "../../../images/mtechTransparent.png";
+import btechImg from "../../../images/btechTransparent.png";
+import { useVisible, menuBarIndex } from "../../../helpers";
 
-export default function Education({ selectedTab }) {
-    useEffect(() => {
-        if (selectedTab !== menuBarIndex.Education) {
-            document.getElementById("education").classList.add("off");
-        } else {
-            document.getElementById("education").classList.remove("off");
-        }
-    }, [selectedTab]);
+export function Education({ selectedTab }) {
+    const page = useVisible(selectedTab, menuBarIndex.Education);
 
     return (
         <>
-            <div id="education" className="main-view off">
+            <div id={page} className="main-view off">
                 <div className="header">Education</div>
 
                 <div className="content-container">
@@ -37,7 +31,12 @@ export default function Education({ selectedTab }) {
                                 </li>
                                 <li>
                                     Wrote & Published a Technical Research paper on{" "}
-                                    <span className="link" onClick={() => window.open("https://www.irjet.net/archives/V6/i4/IRJET-V6I4130.pdf")}>
+                                    <span
+                                        className="link"
+                                        onClick={() =>
+                                            window.open("https://www.irjet.net/archives/V6/i4/IRJET-V6I4130.pdf")
+                                        }
+                                    >
                                         Handwritten Signature Verification
                                     </span>
                                 </li>

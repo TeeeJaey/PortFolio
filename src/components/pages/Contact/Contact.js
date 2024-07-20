@@ -1,20 +1,14 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Contact.css";
-import { menuBarIndex } from "../../Constants";
 import { FaEnvelope, FaLinkedin, FaFacebook, FaGithub } from "react-icons/fa";
+import { useVisible, menuBarIndex } from "../../../helpers";
 
-export default function Contact({ selectedTab }) {
-    useEffect(() => {
-        if (selectedTab !== menuBarIndex.Contact) {
-            document.getElementById("contact").classList.add("off");
-        } else {
-            document.getElementById("contact").classList.remove("off");
-        }
-    }, [selectedTab]);
+export function Contact({ selectedTab }) {
+    const page = useVisible(selectedTab, menuBarIndex.Contact);
 
     return (
         <>
-            <div id="contact" className="main-view off">
+            <div id={page} cclassName="main-view off">
                 <div className="header">Contact</div>
                 <div className="content">
                     Have a question?
@@ -48,7 +42,10 @@ export default function Contact({ selectedTab }) {
                             <FaLinkedin />
                         </div>
                         <div className="contact-value">
-                            <span className="link" onClick={() => window.open("https://www.linkedin.com/in/tejas-jadhav-765043110/")}>
+                            <span
+                                className="link"
+                                onClick={() => window.open("https://www.linkedin.com/in/tejas-jadhav-765043110/")}
+                            >
                                 tejas-jadhav-765043110
                             </span>
                         </div>
@@ -60,7 +57,10 @@ export default function Contact({ selectedTab }) {
                             <FaFacebook />
                         </div>
                         <div className="contact-value">
-                            <span className="link" onClick={() => window.open("https://www.facebook.com/tejasjadhav95/")}>
+                            <span
+                                className="link"
+                                onClick={() => window.open("https://www.facebook.com/tejasjadhav95/")}
+                            >
                                 tejasjadhav95
                             </span>
                         </div>
