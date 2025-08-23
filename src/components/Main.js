@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
-import { About, Welcome, Work, Education, Experience, Skills, Contact } from "./pages";
+import { Routes, Route, useLocation, Navigate } from "react-router-dom";
+import { About, Welcome, Work, Education, Experience, Skills, Contact, NotFound } from "./pages";
 import { MenuBar } from "./MenuBar";
 import { Submarine } from "./Submarine";
 import "./Main.css";
@@ -52,6 +52,8 @@ export default function Main() {
                     path={"/Resume"}
                     element={<RedirectPage url={"https://drive.google.com/file/d/1Eng_We34gI5hpOccvnTfvOy_dCKPy2XN"} />}
                 />
+                <Route path="/404" element={<NotFound />} />
+                <Route path="*" element={<Navigate replace to="/404" />} />
             </Routes>
         </div>
     );

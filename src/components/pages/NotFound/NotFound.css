@@ -1,0 +1,10 @@
+#not-found {
+    top: 20vh;
+}
+
+@media (max-width: 860px) {
+    #not-found {
+        font-size: 18px;
+        color: #c7d9d5;
+    }
+}

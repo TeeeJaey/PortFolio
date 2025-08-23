@@ -5,3 +5,4 @@ export * from "./Experience";
 export * from "./Skills";
 export * from "./Welcome";
 export * from "./Work";
+export * from "./NotFound";
