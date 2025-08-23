@@ -18,12 +18,12 @@
 
 body {
     --theme-blue: #05fdd8;
-    --theme-red: #fd2155;
+    --theme-red: #ff5e84;
     --theme-background: #132a27;
 
     background: #1d1d1d;
     margin: 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", Sans-serif;
 }
 
 .d-none {

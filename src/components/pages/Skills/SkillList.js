@@ -7,7 +7,6 @@ export const SkillList = [
             { title: "HTML-CSS", points: 9 },
             { title: "Redux", points: 8 },
             { title: "Angular", points: 8 },
-            { title: "VueJS", points: 6 },
         ],
     },
     {
@@ -15,9 +14,10 @@ export const SkillList = [
         items: [
             { title: "NodeJS", points: 8 },
             { title: "ExpressJS", points: 8 },
-            { title: "C#.Net", points: 7 },
-            { title: "Python", points: 7 },
-            { title: "Java", points: 5 },
+            { title: "NextJS", points: 7 },
+            { title: "NestJS", points: 7 },
+            { title: "C#.Net", points: 6 },
+            { title: "Python", points: 6 },
         ],
     },
     {
@@ -26,7 +26,7 @@ export const SkillList = [
             { title: "MongoDB", points: 8 },
             { title: "SQL Server", points: 8 },
             { title: "MySQL", points: 7 },
-            { title: "Firebase / Firestore", points: 7 },
+            { title: "Firebase / Firestore", points: 6 },
         ],
     },
     {

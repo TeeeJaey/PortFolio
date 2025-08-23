@@ -62,6 +62,9 @@
     padding-left: 15px;
     line-height: 18px;
 }
+.edex-content li {
+    padding-top: 5px;
+}
 
 .edex-image > img,
 .edex-image-mobile > img {

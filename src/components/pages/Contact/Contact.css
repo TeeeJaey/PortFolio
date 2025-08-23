@@ -32,6 +32,7 @@
 }
 #contact .link {
     color: #6aafa1;
+    cursor: "pointer";
 }
 #contact .link:hover {
     color: var(--theme-blue);

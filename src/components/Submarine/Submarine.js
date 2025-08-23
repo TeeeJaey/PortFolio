@@ -4,7 +4,7 @@ import "./Submarine.css";
 export function Submarine() {
     useEffect(() => {
         const seaAnimated = document.getElementsByClassName("sea-animated");
-        if (seaAnimated) seaAnimated[0].classList.remove("sea-animated");
+        if (seaAnimated?.[0]) seaAnimated[0]?.classList.remove("sea-animated");
     }, []);
 
     return (

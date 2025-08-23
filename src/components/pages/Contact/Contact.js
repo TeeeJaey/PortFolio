@@ -1,6 +1,6 @@
 import React from "react";
 import "./Contact.css";
-import { FaEnvelope, FaLinkedin, FaFacebook, FaGithub } from "react-icons/fa";
+import { FaEnvelope, FaLinkedin, FaFacebook, FaGithub, FaInstagram } from "react-icons/fa";
 import { useVisible, menuBarIndex } from "../../../helpers";
 
 export function Contact({ selectedTab }) {
@@ -8,7 +8,7 @@ export function Contact({ selectedTab }) {
 
     return (
         <>
-            <div id={page} cclassName="main-view off">
+            <div id={page} className="main-view off">
                 <div className="header">Contact</div>
                 <div className="content">
                     Have a question?
@@ -24,14 +24,6 @@ export function Contact({ selectedTab }) {
                         <div className="contact-value">
                             <span className="link" onClick={() => window.location.assign("mailto:tjadhav95@gmail.com")}>
                                 tjadhav95@gmail.com
-                            </span>{" "}
-                            /{" "}
-                            <span
-                                className="link"
-                                style={{ cursor: "pointer" }}
-                                onClick={() => window.location.assign("mailto:can.tejasj@gmail.com")}
-                            >
-                                can.tejasj@gmail.com
                             </span>
                         </div>
                     </div>
@@ -52,6 +44,22 @@ export function Contact({ selectedTab }) {
                     </div>
 
                     <div className="d-flex">
+                        <div className="contact-label">GitHub :</div>
+                        <div className="contact-icon">
+                            <FaGithub />
+                        </div>
+                        <div className="contact-value">
+                            <span className="link" onClick={() => window.open("https://github.com/TeeeJaey")}>
+                                TeeeJaey
+                            </span>{" "}
+                            /{" "}
+                            <span className="link" onClick={() => window.open("https://gist.github.com/TeeeJaey")}>
+                                TeeeJaey-gists
+                            </span>
+                        </div>
+                    </div>
+
+                    <div className="d-flex">
                         <div className="contact-label">Facebook :</div>
                         <div className="contact-icon">
                             <FaFacebook />
@@ -67,17 +75,13 @@ export function Contact({ selectedTab }) {
                     </div>
 
                     <div className="d-flex">
-                        <div className="contact-label">GitHub :</div>
+                        <div className="contact-label">Instagram :</div>
                         <div className="contact-icon">
-                            <FaGithub />
+                            <FaInstagram />
                         </div>
                         <div className="contact-value">
-                            <span className="link" onClick={() => window.open("https://github.com/TeeeJaey")}>
-                                TeeeJaey
-                            </span>{" "}
-                            /{" "}
-                            <span className="link" onClick={() => window.open("https://gist.github.com/TeeeJaey")}>
-                                TeeeJaey-gists
+                            <span className="link" onClick={() => window.open("https://www.instagram.com/teja_dhav/")}>
+                                @teja_dhav
                             </span>
                         </div>
                     </div>

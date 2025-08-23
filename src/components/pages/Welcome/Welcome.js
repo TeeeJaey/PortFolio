@@ -3,17 +3,17 @@ import "./Welcome.css";
 import myImg from "../../../images/profileTransparent.png";
 import { useVisible, menuBarIndex } from "../../../helpers";
 
+const addAnimation = element => {
+    element.classList.add("animate");
+    setTimeout(() => {
+        element.classList.remove("animate");
+    }, 750);
+};
+
 export function Welcome({ selectedTab }) {
     const page = useVisible(selectedTab, menuBarIndex.Welcome);
 
-    const addAnimation = element => {
-        element.classList.add("animate");
-        setTimeout(() => {
-            element.classList.remove("animate");
-        }, 750);
-    };
-
-    const animateName = useCallback(() => {
+    useEffect(() => {
         const T = document.getElementById("T");
         const E = document.getElementById("E");
         const J = document.getElementById("J");
@@ -40,8 +40,6 @@ export function Welcome({ selectedTab }) {
             S.removeEventListener("mouseover", () => addAnimation(S));
         };
     }, []);
-
-    useEffect(() => animateName(), [animateName]);
 
     return (
         <>

@@ -60,17 +60,10 @@ export function Education({ selectedTab }) {
                                     Narsee Monjee Institute of Management Studies
                                 </span>
                             </div>
-                            <ul className="edex-content">
-                                <li>
-                                    Passed out with a CGPA of <span className="highlight">2.70</span>
-                                </li>
-                            </ul>
+
                             <div className="edex-image-mobile">
                                 <img src={btechImg} alt="btechImg" />
                             </div>
-                        </div>
-                        <div className="edex-image">
-                            <img src={btechImg} alt="btechImg" />
                         </div>
                     </div>
                 </div>

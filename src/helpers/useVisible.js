@@ -9,6 +9,7 @@ export const useVisible = (selectedTab, menuIndex) => {
         } else {
             document.getElementById(page).classList.remove("off");
         }
-    }, [selectedTab]);
+    }, [selectedTab, menuIndex]);
+
     return page;
 };

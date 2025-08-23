@@ -14,8 +14,7 @@ export function About({ selectedTab, setSelectedTab }) {
 
                 <div className="content-container">
                     <div className="content">
-                        Hi, I am <span className="highlight name">Tejas Jadhav</span>.
-                        <br /> A 90s kid living in Mumbai.
+                        Hi, I am <span className="highlight name">Tejas</span>.
                     </div>
                     <div className="content">
                         Full-Stack / Front-end <span className="highlight"> Web Developer </span> & FreeLancer with over
@@ -25,19 +24,13 @@ export function About({ selectedTab, setSelectedTab }) {
                     <div className="content">
                         Well-organised nerd with passion of <span className="highlight"> solving problems </span> having
                         high attention to detail.
-                        <br />A huge fan of <span className="highlight">cricket </span>, PC games and TV shows
                     </div>
 
                     <div className="content">
                         Interested in working with me ?
                         <br />
                         <Link to={"/Contact"}>
-                            <div
-                                className="link"
-                                onClick={() => {
-                                    setSelectedTab(menuBarIndex.Contact);
-                                }}
-                            >
+                            <div className="link" onClick={() => setSelectedTab(menuBarIndex.Contact)}>
                                 Let's get in Touch
                             </div>
                         </Link>

@@ -38,11 +38,16 @@ export function Experience({ selectedTab }) {
                                         <span className="techstack-item">{techItem}</span>
                                     ))}
                                 </div>
-                                <ul className="edex-content">
-                                    {exp.content.map(contentItem => (
-                                        <li>{contentItem}</li>
-                                    ))}
-                                </ul>
+                                {exp.projects.map(project => (
+                                    <div className="edex-project">
+                                        <div className="edex-projectname">Project: {project.project} </div>
+                                        <ul className="edex-content">
+                                            {project?.content.map(contentItem => (
+                                                <li>{contentItem}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                ))}
                                 <div className="edex-image-mobile">
                                     <img src={exp.image} alt="hereImg" />
                                 </div>

@@ -50,9 +50,7 @@ export default function Main() {
                 <Route path={"/" + menuBtns[5]} element={<Contact selectedTab={selectedTab} />} />
                 <Route
                     path={"/Resume"}
-                    element={
-                        <RedirectPage url={"https://drive.google.com/file/d/1gfGhRxDbSj5LKB2D0EsdT5Ja3Ley6tH8/view"} />
-                    }
+                    element={<RedirectPage url={"https://drive.google.com/file/d/1Eng_We34gI5hpOccvnTfvOy_dCKPy2XN"} />}
                 />
             </Routes>
         </div>
