@@ -60,10 +60,6 @@ export function Education({ selectedTab }) {
                                     Narsee Monjee Institute of Management Studies
                                 </span>
                             </div>
-
-                            <div className="edex-image-mobile">
-                                <img src={btechImg} alt="btechImg" />
-                            </div>
                         </div>
                     </div>
                 </div>

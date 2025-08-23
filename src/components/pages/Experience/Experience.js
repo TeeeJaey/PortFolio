@@ -49,11 +49,11 @@ export function Experience({ selectedTab }) {
                                     </div>
                                 ))}
                                 <div className="edex-image-mobile">
-                                    <img src={exp.image} alt="hereImg" />
+                                    <img src={exp.image} alt={exp.id + "Image"} />
                                 </div>
                             </div>
                             <div className="edex-image">
-                                <img src={exp.image} alt="hereImg" />
+                                <img src={exp.image} alt={exp.id + "Image"} />
                             </div>
                         </div>
                     ))}
