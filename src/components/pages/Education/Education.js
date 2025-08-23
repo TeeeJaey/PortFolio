@@ -2,7 +2,6 @@ import React from "react";
 import "../Edu-Exp.css";
 import "./Education.css";
 import mtechImg from "../../../images/mtechTransparent.png";
-import btechImg from "../../../images/btechTransparent.png";
 import { useVisible, menuBarIndex } from "../../../helpers";
 
 export function Education({ selectedTab }) {
@@ -59,10 +58,6 @@ export function Education({ selectedTab }) {
                                 <span className="link" onClick={() => window.open("https://engineering.nmims.edu/")}>
                                     Narsee Monjee Institute of Management Studies
                                 </span>
-                            </div>
-
-                            <div className="edex-image-mobile">
-                                <img src={btechImg} alt="btechImg" />
                             </div>
                         </div>
                     </div>
