@@ -57,9 +57,9 @@ export default function Main() {
                     />
                     <Route path={"/" + menuBtns[5]} element={<Contact selectedTab={selectedTab} />} />
                     <Route
-                        path={"/Resume"}
+                        path={"/CV"}
                         element={
-                            <RedirectPage url={"https://drive.google.com/file/d/1Eng_We34gI5hpOccvnTfvOy_dCKPy2XN"} />
+                            <RedirectPage url={"https://github.com/TeeeJaey/TeeeJaey/blob/main/TejasJadhav_CV.pdf"} />
                         }
                     />
                     <Route path="/404" element={<NotFound />} />
