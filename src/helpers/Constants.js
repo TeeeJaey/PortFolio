@@ -8,4 +8,4 @@ export const menuBarIndex = {
     Contact: 5,
 };
 
-export const menuBtns = ["About", "Experience", "Skills", "Education", "Work", "Contact"];
+export const menuBtns = ["About", "Experience", , "Education", "Work", "Contact"];

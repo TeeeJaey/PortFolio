@@ -42,40 +42,38 @@ export function Welcome({ selectedTab }) {
     }, []);
 
     return (
-        <>
-            <div id={page} className="main-view off">
-                <div className="content-container d-flex">
-                    <div>
-                        <div className="welcome-content">
-                            Hi, <br />
-                            I'm{" "}
-                            <span className="welcome-name waviy">
-                                <span className="waviy-char" id="T">
-                                    T
-                                </span>
-                                <span className="waviy-char" id="E">
-                                    E
-                                </span>
-                                <span className="waviy-char" id="J">
-                                    J
-                                </span>
-                                <span className="waviy-char" id="A">
-                                    A
-                                </span>
-                                <span className="waviy-char" id="S">
-                                    S
-                                </span>
+        <div id={page} className="main-view off">
+            <div className="content-container d-flex">
+                <div>
+                    <div className="welcome-content">
+                        Hi, <br />
+                        I'm{" "}
+                        <span className="welcome-name waviy">
+                            <span className="waviy-char" id="T">
+                                T
                             </span>
-                        </div>
-                        <hr style={{ borderColor: "rgb(5 253 216 / 0.5)" }} />
-                        <div className="welcome-caption">Software Developer</div>
-                        <hr style={{ borderColor: "rgb(5 253 216 / 0.5)" }} />
+                            <span className="waviy-char" id="E">
+                                E
+                            </span>
+                            <span className="waviy-char" id="J">
+                                J
+                            </span>
+                            <span className="waviy-char" id="A">
+                                A
+                            </span>
+                            <span className="waviy-char" id="S">
+                                S
+                            </span>
+                        </span>
                     </div>
-                    <div className="profile-pic">
-                        <img src={myImg} alt={myImg} />
-                    </div>
+                    <hr style={{ borderColor: "rgb(5 253 216 / 0.5)" }} />
+                    <div className="welcome-caption">Software Developer</div>
+                    <hr style={{ borderColor: "rgb(5 253 216 / 0.5)" }} />
+                </div>
+                <div className="profile-pic">
+                    <img src={myImg} alt={myImg} />
                 </div>
             </div>
-        </>
+        </div>
     );
 }

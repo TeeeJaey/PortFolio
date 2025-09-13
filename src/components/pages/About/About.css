@@ -1,5 +1,7 @@
 #about {
     top: 20vh;
+    font-size: 24px;
+    font-family: "Inconsolata", monospace;
 }
 #about.off {
     margin-left: -120vw;

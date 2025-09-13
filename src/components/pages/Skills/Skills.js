@@ -24,16 +24,14 @@ export function Skills({ selectedTab }) {
     }, [selectedTab]);
 
     return (
-        <>
-            <div id={page} className="main-view off">
-                <div className="header">Skills</div>
+        <div id={page} className="main-view off">
+            <div className="header">Skills</div>
 
-                <div className="content-container">
-                    {SkillList.map((skill, index) => (
-                        <SkillGraph key={index} skill={skill} />
-                    ))}
-                </div>
+            <div className="content-container">
+                {SkillList.map((skill, index) => (
+                    <SkillGraph key={index} skill={skill} />
+                ))}
             </div>
-        </>
+        </div>
     );
 }

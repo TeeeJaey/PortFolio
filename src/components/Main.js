@@ -1,12 +1,19 @@
-import React, { useEffect, useState } from "react";
-import { Routes, Route, useLocation, Navigate } from "react-router-dom";
-import { About, Welcome, Work, Education, Experience, Skills, Contact, NotFound } from "./pages";
+import React, { useEffect, useState, lazy, Suspense } from "react";
+import { BrowserRouter as Router, Route, Routes, useLocation, Navigate, NavigateSwitch } from "react-router-dom";
 import { MenuBar } from "./MenuBar";
 import { Submarine } from "./Submarine";
 import "./Main.css";
 import { FaBars } from "react-icons/fa";
 import { Bubbles } from "./Bubbles";
 import { RedirectPage, menuBarIndex, menuBtns } from "../helpers";
+
+import Welcome from "./pages/Welcome";
+const Experience = lazy(() => import("./pages/Experience"));
+const About = lazy(() => import("./pages/About"));
+const Work = lazy(() => import("./pages/Work"));
+const Education = lazy(() => import("./pages/Education"));
+const Contact = lazy(() => import("./pages/Contact"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 export default function Main() {
     const location = useLocation();
@@ -34,27 +41,31 @@ export default function Main() {
                 setSelectedTab={tab => setSelectedTab(tab)}
             />
             <Submarine />
-            <Routes>
-                <Route path="/" element={<Welcome selectedTab={selectedTab} />} />
-                <Route
-                    path={"/" + menuBtns[0]}
-                    element={<About selectedTab={selectedTab} setSelectedTab={tab => setSelectedTab(tab)} />}
-                />
-                <Route path={"/" + menuBtns[1]} element={<Experience selectedTab={selectedTab} />} />
-                <Route path={"/" + menuBtns[2]} element={<Skills selectedTab={selectedTab} />} />
-                <Route path={"/" + menuBtns[3]} element={<Education selectedTab={selectedTab} />} />
-                <Route
-                    path={"/" + menuBtns[4] + "/*"}
-                    element={<Work selectedTab={selectedTab} setSelectedTab={tab => setSelectedTab(tab)} />}
-                />
-                <Route path={"/" + menuBtns[5]} element={<Contact selectedTab={selectedTab} />} />
-                <Route
-                    path={"/Resume"}
-                    element={<RedirectPage url={"https://drive.google.com/file/d/1Eng_We34gI5hpOccvnTfvOy_dCKPy2XN"} />}
-                />
-                <Route path="/404" element={<NotFound />} />
-                <Route path="*" element={<Navigate replace to="/404" />} />
-            </Routes>
+            <Suspense fallback={<div>Loading...</div>}>
+                <Routes>
+                    <Route path="/" element={<Welcome selectedTab={selectedTab} />} />
+                    <Route
+                        path={"/" + menuBtns[0]}
+                        element={<About selectedTab={selectedTab} setSelectedTab={tab => setSelectedTab(tab)} />}
+                    />
+                    <Route path={"/" + menuBtns[1]} element={<Experience selectedTab={selectedTab} />} />
+                    {/* <Route path={"/" + menuBtns[2]} element={<Skills selectedTab={selectedTab} />} /> */}
+                    <Route path={"/" + menuBtns[3]} element={<Education selectedTab={selectedTab} />} />
+                    <Route
+                        path={"/" + menuBtns[4] + "/*"}
+                        element={<Work selectedTab={selectedTab} setSelectedTab={tab => setSelectedTab(tab)} />}
+                    />
+                    <Route path={"/" + menuBtns[5]} element={<Contact selectedTab={selectedTab} />} />
+                    <Route
+                        path={"/Resume"}
+                        element={
+                            <RedirectPage url={"https://drive.google.com/file/d/1Eng_We34gI5hpOccvnTfvOy_dCKPy2XN"} />
+                        }
+                    />
+                    <Route path="/404" element={<NotFound />} />
+                    <Route path="*" element={<Navigate replace to="/404" />} />
+                </Routes>
+            </Suspense>
         </div>
     );
 }

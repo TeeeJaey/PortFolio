@@ -1,1 +1,3 @@
-export { Work } from "./Work";
+import { Work } from "./Work";
+
+export default Work;
