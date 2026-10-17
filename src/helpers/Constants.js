@@ -8,6 +8,9 @@ export const menuBarIndex = {
     Contact: 5,
 };
 
+// Pages that stay routable but have no side bar button
+export const hiddenMenuBtns = ["Work"];
+
 // Skills (index 2) is intentionally left empty so it has no menu button or route
 // eslint-disable-next-line no-sparse-arrays
 export const menuBtns = ["About", "Experience", , "Education", "Work", "Contact"];

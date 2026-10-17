@@ -4,6 +4,7 @@ import TJsvg from "./TJsvg";
 import { MdClose } from "react-icons/md";
 import menuBG from "../../images/menuBG.png";
 import { Link } from "react-router-dom";
+import { hiddenMenuBtns } from "../../helpers";
 
 export function MenuBar({ selectedTab, menuBtns, setSelectedTab, showingMobileMenu, setShowingMobileMenu }) {
     useEffect(() => {
@@ -60,6 +61,7 @@ export function MenuBar({ selectedTab, menuBtns, setSelectedTab, showingMobileMe
                 </Link>
                 <div className="menu-btns">
                     {menuBtns.map((menuBtn, index) => {
+                        if (hiddenMenuBtns.includes(menuBtn)) return null;
                         return (
                             <Link to={"/" + menuBtn} key={index}>
                                 <div
