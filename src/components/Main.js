@@ -1,5 +1,5 @@
 import React, { useEffect, useState, lazy, Suspense } from "react";
-import { BrowserRouter as Router, Route, Routes, useLocation, Navigate, NavigateSwitch } from "react-router-dom";
+import { Route, Routes, useLocation, Navigate } from "react-router-dom";
 import { MenuBar } from "./MenuBar";
 import { Submarine } from "./Submarine";
 import "./Main.css";

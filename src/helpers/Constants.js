@@ -8,4 +8,6 @@ export const menuBarIndex = {
     Contact: 5,
 };
 
+// Skills (index 2) is intentionally left empty so it has no menu button or route
+// eslint-disable-next-line no-sparse-arrays
 export const menuBtns = ["About", "Experience", , "Education", "Work", "Contact"];

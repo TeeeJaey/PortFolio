@@ -13,7 +13,7 @@ export function About({ selectedTab, setSelectedTab }) {
 
             <div className="content-container">
                 <div className="content">
-                    Hi, I am <span className="highlight name">Tejas</span>. You can call me Tehsu (テハス)
+                    Hi, I am <span className="highlight name">Tejas</span>. You can call me TJ
                 </div>
                 <div className="content">
                     A <span className="highlight">JavaScript Developer</span> with over

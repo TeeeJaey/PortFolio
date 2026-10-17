@@ -16,6 +16,7 @@ export function Work({ match, selectedTab, setSelectedTab }) {
             const workItem = location.pathname.split("/")[2];
             if (workItem) setTimeout(() => setShowData(workItem), 1000);
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [selectedTab]);
 
     return (

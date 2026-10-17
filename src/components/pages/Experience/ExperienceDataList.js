@@ -2,8 +2,35 @@ import React from "react";
 import hereImg from "../../../images/here.jpg";
 import dnImg from "../../../images/DN.jpg";
 import jpmcImg from "../../../images/jpmc.png";
+import razerImg from "../../../images/razer.jpg";
 
 export const ExperienceDataList = [
+    {
+        id: "RAZER",
+        title: "Senior Software Engineer",
+        company: (
+            <span className="link" onClick={() => window.open("https://www.razer.com/")}>
+                Razer Inc.
+            </span>
+        ),
+        image: razerImg,
+        techstack: ["React", "JavaScript", "TypeScript", "Claude", "Codex"],
+        time: (
+            <>
+                Since <br /> Feb 2026
+            </>
+        ),
+        projects: [
+            {
+                project: (
+                    <span className="link" onClick={() => window.open("https://www.razer.com/synapse-4")}>
+                        Synapse 4
+                    </span>
+                ),
+                content: [],
+            },
+        ],
+    },
     {
         id: "JPMC",
         title: "Software Engineer",
@@ -13,10 +40,10 @@ export const ExperienceDataList = [
             </span>
         ),
         image: jpmcImg,
-        techstack: ["React", "Redux", "TypeScript", "Playwright", "NestJS", "Ag-grid"],
+        techstack: ["React", "Redux", "TypeScript", "Playwright", "NestJS", "Ag-grid", "GitHub Copilot", "ChatGPT"],
         time: (
             <>
-                Since <br /> Apr 2024
+                Apr 2024 <br />- Feb 2026
             </>
         ),
         projects: [

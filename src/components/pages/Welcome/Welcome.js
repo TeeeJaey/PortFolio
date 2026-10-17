@@ -1,6 +1,6 @@
-import React, { useEffect, useCallback } from "react";
+import React, { useEffect } from "react";
 import "./Welcome.css";
-import myImg from "../../../images/profileTransparent.png";
+import myImg from "../../../images/rz-tj.jpeg";
 import { useVisible, menuBarIndex } from "../../../helpers";
 
 const addAnimation = element => {
@@ -14,30 +14,15 @@ export function Welcome({ selectedTab }) {
     const page = useVisible(selectedTab, menuBarIndex.Welcome);
 
     useEffect(() => {
-        const T = document.getElementById("T");
-        const E = document.getElementById("E");
-        const J = document.getElementById("J");
-        const A = document.getElementById("A");
-        const S = document.getElementById("S");
+        const letters = ["T", "E", "J", "A", "S"].map(id => document.getElementById(id));
+        const timeouts = letters.map((el, i) => setTimeout(() => addAnimation(el), 1000 + i * 100));
+        const handlers = letters.map(el => () => addAnimation(el));
 
-        setTimeout(() => addAnimation(T), 1000);
-        setTimeout(() => addAnimation(E), 1100);
-        setTimeout(() => addAnimation(J), 1200);
-        setTimeout(() => addAnimation(A), 1300);
-        setTimeout(() => addAnimation(S), 1400);
-
-        T.addEventListener("mouseover", () => addAnimation(T));
-        E.addEventListener("mouseover", () => addAnimation(E));
-        J.addEventListener("mouseover", () => addAnimation(J));
-        A.addEventListener("mouseover", () => addAnimation(A));
-        S.addEventListener("mouseover", () => addAnimation(S));
+        letters.forEach((el, i) => el.addEventListener("mouseover", handlers[i]));
 
         return () => {
-            T.removeEventListener("mouseover", () => addAnimation(T));
-            E.removeEventListener("mouseover", () => addAnimation(E));
-            J.removeEventListener("mouseover", () => addAnimation(J));
-            A.removeEventListener("mouseover", () => addAnimation(A));
-            S.removeEventListener("mouseover", () => addAnimation(S));
+            timeouts.forEach(clearTimeout);
+            letters.forEach((el, i) => el.removeEventListener("mouseover", handlers[i]));
         };
     }, []);
 
@@ -71,7 +56,7 @@ export function Welcome({ selectedTab }) {
                     <hr style={{ borderColor: "rgb(5 253 216 / 0.5)" }} />
                 </div>
                 <div className="profile-pic">
-                    <img src={myImg} alt={myImg} />
+                    <img src={myImg} alt="Tejas Jadhav" />
                 </div>
             </div>
         </div>

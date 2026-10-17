@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { menuBtns } from "./Constants";
 
 export const useVisible = (selectedTab, menuIndex) => {
@@ -9,7 +9,7 @@ export const useVisible = (selectedTab, menuIndex) => {
         } else {
             document.getElementById(page).classList.remove("off");
         }
-    }, [selectedTab, menuIndex]);
+    }, [selectedTab, menuIndex, page]);
 
     return page;
 };
